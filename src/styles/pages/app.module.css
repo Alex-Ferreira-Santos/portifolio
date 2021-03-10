@@ -10,7 +10,8 @@
     width: 90%;
     margin: auto;
     margin-top: 1rem;
-    height: auto
+    height: auto;
+    padding-bottom: 1rem;
 }
 .img{
     width: 20rem;
@@ -63,6 +64,16 @@
     font-size: 1.2rem;
     width: 90%;
     margin: auto
+}
+
+.tecnology{
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+.language{
+    font-size: 1.5rem;
+    margin-top: 1rem
 }
 
 @media (max-width: 820px){
@@ -136,6 +147,13 @@
     }
     .about{
         border-radius: 20px;
+    }
+    .tecnology{
+        font-size: 1.2rem
+    }
+    
+    .language{
+        font-size: 1rem
     }
 }
 
