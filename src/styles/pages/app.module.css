@@ -1,16 +1,26 @@
 .main{
     background-color: #05092E;
-    
+    padding-top: 2rem;
 }
 
 .container{
     background-color: #09115E;
     color: white;
     border-radius: 50px;
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+}
+.img{
+    width: 20rem;
+    border-radius: 50%;
 }
 
 .profile{
     display: flex;
+}
+.link{
+    color: gray
 }
 @media (max-width: 768px){
     .main{
@@ -22,17 +32,46 @@
     }
     .container{
         height: 98vh;
+        margin-top: 0
+    }
+    .midia{
+        line-height: 2rem;
     }
     .name{
-        font-size: 2rem
+        font-size: 1.8rem
+    }
+    .contact{
+        font-size: 1.3rem
     }
     .img{
-       width: 100%;
+        width: 15rem;
+        margin-bottom: 0.5rem;
+        margin-top: 1rem
     }
     .profile{
        flex-direction: column;
        justify-content: center;
        align-items: center;
-       font-family: Roboto,serif;
+       
+    }
+    
+}
+
+@media(min-width:425px){
+    .midia{
+        line-height: 3rem;
+    }
+    .name{
+        font-size: 2.8rem
+    }
+    .contact{
+        font-size: 2.3rem
+    }
+    .img{
+        width: 18rem;
+        margin-bottom: 0.5rem;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1rem
     }
 }

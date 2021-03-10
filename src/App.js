@@ -10,9 +10,9 @@ function App(){
           <div className={styles.data}>
             <h1 className={styles.name}>Alex Ferreira Santos</h1>
             <h2 className={styles.contact}>Contato</h2>
-            <p className={styles.email}>Email: alexfstos2@gmail.com</p>
-            <p className={styles.github}>Github: <a href="https://github.com/Alex-Ferreira-Santos">Alex-Ferreira-Santos</a></p>
-            <p className={styles.linkedin}>LinkedIn: <a href="https://www.linkedin.com/in/alex-ferreira-santos-/">alex-ferreira-santos-</a></p>
+            <p className={styles.midia}>Email: alexfstos2@gmail.com</p>
+            <p className={styles.midia}>Github: <a href="https://github.com/Alex-Ferreira-Santos" className={styles.link}>Alex-Ferreira-Santos</a></p>
+            <p className={styles.midia}>LinkedIn: <a href="https://www.linkedin.com/in/alex-ferreira-santos-/" className={styles.link}>alex-ferreira-santos-</a></p>
           </div>
         </div>
       </div>
