@@ -38,7 +38,12 @@
 }
 
 .link{
-    color: green
+    color: green;
+    transition: 0.2s
+}
+
+.link:hover{
+    color: rgb(228, 148, 0)
 }
 
 .about{
@@ -73,7 +78,35 @@
 
 .language{
     font-size: 1.5rem;
-    margin-top: 1rem
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.row{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+}
+
+.html{
+    display: flex;
+    background-color: #DFA98B;
+    border: 1px solid#CD6125;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.lgn{
+    font-size: 1.3rem
+}
+
+.image{
+    width: 5rem;
 }
 
 @media (max-width: 820px){
