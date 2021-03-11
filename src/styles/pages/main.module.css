@@ -46,7 +46,7 @@
     color: rgb(228, 148, 0)
 }
 
-.about{
+.section{
     background-color: var(--white);
     color: black;
     text-align: center;
@@ -87,7 +87,32 @@
     width: 90%;
     justify-content: space-around;
     margin: auto;
+    align-items: flex-start;
+}
+
+.center{
+    display: flex;
     align-items: center;
+}
+
+.languageCode{
+    margin: auto;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+
+.code{
+    background-color: lightgray;
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem
+}
+.languageName{
+    display:flex;
+    justify-content: flex-end;
 }
 
 .html{
@@ -98,6 +123,7 @@
     padding-right: 1rem;
     padding-left: 1rem;
     border-radius: 20px;
+    flex-direction: column;
     cursor: pointer;
 }
 
