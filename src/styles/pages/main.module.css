@@ -115,16 +115,30 @@
     justify-content: flex-end;
 }
 
-.html{
+.containerLanguage{
     display: flex;
-    background-color: #DFA98B;
-    border: 1px solid#CD6125;
     align-items: center;
     padding-right: 1rem;
     padding-left: 1rem;
     border-radius: 20px;
     flex-direction: column;
     cursor: pointer;
+}
+
+.html{
+    background-color: #DFA98B;
+    border: 1px solid#CD6125;
+}
+
+.css{
+    background-color: #A6F4FF;
+    border: 1px solid#00B5B5;
+    
+}
+
+.js{
+    background-color: #FBFF4B;
+    border: 1px solid#AAAD01;
 }
 
 .lgn{

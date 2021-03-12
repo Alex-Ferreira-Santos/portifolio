@@ -1,6 +1,8 @@
 import React,{useState} from 'react';
 import styles from '../styles/pages/main.module.css'
 import html from '../img/html.png'
+import css from '../img/css.png'
+import js from '../img/js.png'
 
 function Main(){
     const [showCode,setShowCode] = useState(false)
@@ -26,7 +28,7 @@ function Main(){
             <h1 className={styles.tecnology}>Técnologias Dominadas</h1>
             <h2 className={styles.language}>Linguagens</h2>
             <div className={styles.row}>
-                    <div className={styles.html} onClick={()=>{
+                    <div className={`${styles.containerLanguage} ${styles.html}`} onClick={()=>{
                         setShowCode(true)
                         setCode('html')
                         }}>
@@ -36,22 +38,23 @@ function Main(){
                         </div> 
                     </div>
                     
-                    <div className={styles.html} onClick={()=>{
+                    <div className={`${styles.containerLanguage} ${styles.css}`} onClick={()=>{
                         setShowCode(true)
                         setCode('css')
                     }}>
                         <div className={styles.center}>
-                            <img src={html} alt="html" className={styles.image}/>
-                            <p className={styles.lgn}>HTML</p>
+                            <img src={css} alt="css" className={styles.image}/>
+                            <p className={styles.lgn}>CSS</p>
                         </div>
                     </div>
-                    <div className={styles.html} onClick={()=>{
+
+                    <div className={`${styles.containerLanguage} ${styles.js}`} onClick={()=>{
                         setShowCode(true)
                         setCode('js')
                     }}>
                         <div className={styles.center}>
-                            <img src={html} alt="html" className={styles.image}/>
-                            <p className={styles.lgn}>HTML</p>
+                            <img src={js} alt="js" className={styles.image}/>
+                            <p className={styles.lgn}>Javascript</p>
                         </div>
                     </div>
             </div>
