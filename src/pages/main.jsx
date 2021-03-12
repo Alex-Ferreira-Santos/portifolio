@@ -63,30 +63,27 @@ function Main(){
                     {code === 'html' && (
                        <div className={styles.languageCode}>
                         <h1 className={styles.languageName}>HTML</h1>
-                        <pre>
+                        <pre className={styles.coding}>
                             {`<!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Document</title>
+        <meta charset="UTF-8"/>`}</pre>
+        <p className={styles.coding}>       &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"/&gt;</p>
+        <p className={styles.coding}>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;</p>
+        <pre className={styles.coding}>
+        {`    <title>Document</title>
     </head>
     <body>
-        <h1>Exemplo de código html</h1>                     
+        <h1>html</h1>                     
     </body>
-</html>
-                            `}
-                           
-                            
-                            
+</html>`}    
                         </pre>
                         </div> 
                     )}
                     {code === 'css' && (
                         <div className={styles.languageCode}>
-                        <h1 className={styles.languageName}>CSS</h1>
-                        <pre>
+                            <h1 className={styles.languageName}>CSS</h1>
+                            <pre className={styles.coding}>
                         {`@media (max-width: 820px){
     .name{
         font-size: 2.4rem;
@@ -102,13 +99,13 @@ function Main(){
         font-size: 2em;
     }  
 }`}
-                        </pre>
+                            </pre>
                         </div> 
                     )}
                     {code === 'js' && (
                         <div className={styles.languageCode}>
                         <h1 className={styles.languageName}>Javascript</h1>
-                        <pre>
+                        <pre className={styles.coding}>
                         {`
 let seconds = 0
 let array = []
@@ -119,12 +116,14 @@ function stopCountDown(){
     clearInterval(count)
     return true
 }
-document.getElementById('timer').addEventListerner('click', stopCountDown)
-
-fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=15')
+document.getElementById('timer')
+    .addEventListerner('click',
+stopCountDown)
+fetch('https://pokeapi.co/api/v2/
+pokemon?offset=0&limit=15')
     .then(response => response.json())
-    .then(data => { array.push(data)}
-                        `}
+    .then(data => { array.push(data)}`}
+                        
                         </pre>
                         </div> 
                     )}
