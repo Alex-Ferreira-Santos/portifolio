@@ -3,6 +3,10 @@ import styles from '../styles/pages/main.module.css'
 import html from '../img/html.png'
 import css from '../img/css.png'
 import js from '../img/js.png'
+import csharp from '../img/csharp.png'
+import sql from '../img/sql.png'
+import php from '../img/php.png'
+import python from '../img/python.png'
 
 function Main(){
     const [showCode,setShowCode] = useState(false)
@@ -130,6 +134,48 @@ pokemon?offset=0&limit=15')
                     
                 </div>                        
             )}
+            <div className={styles.row}>
+                    <div className={`${styles.containerLanguage} ${styles.csharp}`} onClick={()=>{
+                        setShowCode(true)
+                        setCode('csharp')
+                        }}>
+                        <div className={styles.center}>
+                            <img src={csharp} alt="c#" className={styles.image}/>
+                            <p className={styles.lgn}>C#</p>
+                        </div> 
+                    </div>
+                    
+                    <div className={`${styles.containerLanguage} ${styles.sql}`} onClick={()=>{
+                        setShowCode(true)
+                        setCode('sql')
+                    }}>
+                        <div className={styles.center}>
+                            <img src={sql} alt="sql" className={styles.image}/>
+                            <p className={styles.lgn}>SQL</p>
+                        </div>
+                    </div>
+
+                    <div className={`${styles.containerLanguage} ${styles.php}`} onClick={()=>{
+                        setShowCode(true)
+                        setCode('php')
+                    }}>
+                        <div className={styles.center}>
+                            <img src={php} alt="php" className={styles.image}/>
+                            <p className={styles.lgn}>Sintaxe PHP</p>
+                        </div>
+                    </div>
+            </div>
+            <div className={styles.row}>
+                    <div className={`${styles.containerLanguage} ${styles.python}`} onClick={()=>{
+                        setShowCode(true)
+                        setCode('python')
+                        }}>
+                        <div className={styles.center}>
+                            <img src={python} alt="python" className={styles.image}/>
+                            <p className={styles.lgn}>Python básico</p>
+                        </div> 
+                    </div>
+            </div>
             
             </section>
         </main>

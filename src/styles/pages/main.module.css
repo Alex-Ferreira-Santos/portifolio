@@ -88,6 +88,7 @@
     justify-content: space-around;
     margin: auto;
     align-items: flex-start;
+    margin-bottom: 1rem;
 }
 
 .center{
@@ -108,7 +109,8 @@
     background-color: lightgray;
     width: 80%;
     margin: auto;
-    margin-top: 1rem
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .languageName{
     display:flex;
@@ -123,6 +125,12 @@
     border-radius: 20px;
     flex-direction: column;
     cursor: pointer;
+    transition: .3s;
+}
+
+.containerLanguage:hover{
+    transform: translateX(-5px) translateY(-5px);
+    box-shadow: 1px 1px black;
 }
 
 .html{
@@ -133,12 +141,31 @@
 .css{
     background-color: #A6F4FF;
     border: 1px solid#00B5B5;
-    
 }
 
 .js{
     background-color: #FBFF4B;
     border: 1px solid#AAAD01;
+}
+
+.csharp{
+    background-color: #8DDA99;
+    border: 1px solid#208C31;
+}
+
+.sql{
+    background-color: #71AAFF;
+    border: 1px solid#0066FF;
+}
+
+.php{
+    background-color: #9A9EFF;
+    border: 1px solid#434BFC; 
+}
+
+.python{
+    background-color: #CEE8A4;
+    border: 1px solid#7A9B1D; 
 }
 
 .lgn{
