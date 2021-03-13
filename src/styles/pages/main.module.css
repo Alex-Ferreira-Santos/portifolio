@@ -126,6 +126,7 @@
     flex-direction: column;
     cursor: pointer;
     transition: .3s;
+    
 }
 
 .containerLanguage:hover{
@@ -151,6 +152,10 @@
 .csharp{
     background-color: #8DDA99;
     border: 1px solid#208C31;
+}
+
+.left{
+    margin-left: 1rem;
 }
 
 .sql{
@@ -247,6 +252,10 @@
         justify-content: flex-end;
         font-size: 1rem;
     }
+
+    .left{
+        margin-left: .5rem;
+    }
     
 }
 @media(max-width:425px){
@@ -292,7 +301,7 @@
         font-size: .8rem
     }
     .coding{
-        font-size: .9rem;
+        font-size: .7rem;
         max-width: 90%;
     }
     .languageCode{

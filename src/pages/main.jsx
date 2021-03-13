@@ -62,6 +62,7 @@ function Main(){
                         </div>
                     </div>
             </div>
+            
             {showCode && (                   
                 <div className={styles.code}>
                     {code === 'html' && (
@@ -134,6 +135,7 @@ pokemon?offset=0&limit=15')
                     
                 </div>                        
             )}
+
             <div className={styles.row}>
                     <div className={`${styles.containerLanguage} ${styles.csharp}`} onClick={()=>{
                         setShowCode(true)
@@ -141,7 +143,7 @@ pokemon?offset=0&limit=15')
                         }}>
                         <div className={styles.center}>
                             <img src={csharp} alt="c#" className={styles.image}/>
-                            <p className={styles.lgn}>C#</p>
+                            <p className={`${styles.lgn} ${styles.left}`}>C#</p>
                         </div> 
                     </div>
                     
@@ -165,6 +167,74 @@ pokemon?offset=0&limit=15')
                         </div>
                     </div>
             </div>
+
+            {showCode && (                   
+                <div className={styles.code}>
+                    {code === 'csharp' && (
+                       <div className={styles.languageCode}>
+                        <h1 className={styles.languageName}>C#</h1>
+                        <pre className={styles.coding}>
+                            {`namespace Exemplo{
+  class Program{
+    static void Main(string[] args){
+      do{
+      Console.WriteLine('Qual seu nome?');
+      string name = Console.ReadLine();
+      Console.WriteLine('Quantos anos você tem?');
+      int age = int.Parse(Console.ReadLine());
+      Pessoa per = new Pessoa(name,age);
+      List<Pessoa> list = new List<Pessoa>();
+      list.Add(person);
+      Console.WriteLine('Cadastrar mais alguem?')
+      string answer = Console.ReadLine();
+      }while(answer!='n');
+      Console.WriteLine('Lista de pessoas:');
+      foreach( person in list){
+        Console.WriteLine(per.name+'|'+per.age)
+      }
+    }
+  }
+}`}    
+                        </pre>
+                        </div> 
+                    )}
+                    {code === 'sql' && (
+                        <div className={styles.languageCode}>
+                            <h1 className={styles.languageName}>SQL</h1>
+                            <pre className={styles.coding}>
+                        {`#MySql
+CREATE DATABASE Exemplo
+
+CREATE TABLE IF NOT EXISTS person(
+    idExemplo INTEGER PRIMARY KEY AUTOINCREMENT,
+    name VARCHAR(255) NOT NULL,
+    age INT(11) NOT NULL,
+)
+
+INSERT INTO person(name,age) VALUES('Alex',18)
+
+SELECT * FROM person WHERE idExemplo = 1
+
+UPDATE person SET name='Alex F' WHERE idExemplo=1
+
+DELETE FROM person WHERE idExemplo = 1
+
+                        `}
+                            </pre>
+                        </div> 
+                    )}
+                    {code === 'php' && (
+                        <div className={styles.languageCode}>
+                        <h1 className={styles.languageName}>PHP</h1>
+                        <pre className={styles.coding}>
+                        {``}
+                        
+                        </pre>
+                        </div> 
+                    )}
+                    
+                </div>                        
+            )}
             <div className={styles.row}>
                     <div className={`${styles.containerLanguage} ${styles.python}`} onClick={()=>{
                         setShowCode(true)
