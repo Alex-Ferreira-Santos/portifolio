@@ -245,7 +245,8 @@
         background-color: lightgray;
         width: 85%;
         margin: auto;
-        margin-top: 1rem
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
     .languageName{
         display:flex;

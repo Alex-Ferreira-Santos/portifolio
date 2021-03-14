@@ -227,7 +227,34 @@ DELETE FROM person WHERE idExemplo = 1
                         <div className={styles.languageCode}>
                         <h1 className={styles.languageName}>PHP</h1>
                         <pre className={styles.coding}>
-                        {``}
+                        {`<?php?>
+require_once 'Exemplo.php';
+
+class Person extends Exemplo{
+    public function _construct($name,$age){
+        $this->name = $name;
+        $this->age = $age;
+    }
+    public $name;
+    private $age;
+
+    public function getName(){
+        return $this->name;
+    }
+
+    public function setName($name){
+        $this->name = $name;
+    }
+}   
+$name = isset($_GET['name']);
+$age = isset($_GET['age']);
+
+$per[0] = new Person($name, $age);
+$per[1] = new Person('Alex',18);
+
+print_r($per);
+                        
+`}
                         
                         </pre>
                         </div> 
@@ -246,6 +273,51 @@ DELETE FROM person WHERE idExemplo = 1
                         </div> 
                     </div>
             </div>
+            {showCode && (                   
+                <div className={styles.code}>
+                    {code === 'python' && (
+                       <div className={styles.languageCode}>
+                        <h1 className={styles.languageName}>Python</h1>
+                        <pre className={styles.coding}>
+                            {`import random
+
+class Dados:
+    def play(self):
+        self.number = random.Randint(1,7)  
+        return number
+    
+    pass
+
+name = str(input('Qual seu nome?'))
+print(f'bem vindo ao jogo {name}').strip()
+goal = 100
+while(option != 'STOP' or goal < 0):
+    print('Escolha o que quer fazer')
+    print('Para jogar os dados digite "D"')
+    print('Para sair do jogo digite "STOP"')
+    option = str(input('O que deseja fazer?: '))
+    option = option.strip().upper()
+    if(option == 'D'):
+        dados = Dados()
+        number = dados.play()
+        print(f'O número tirado foi {number}')
+        goal-=number
+        print(f'Falta {goal} casas para acabar')
+    elfi(option == 'STOP'):
+        print('encerrando o jogo...')
+        break
+    else:
+        print('digite uma opção valida')
+
+print('Jogo encerrado!')
+if(goal < 0):
+    print('Parabêns você chegou até o final!!!')
+                            `}    
+                        </pre>
+                        </div> 
+                    )}          
+                </div>                        
+            )}
             
             </section>
         </main>
