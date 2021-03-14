@@ -479,7 +479,6 @@ export default Main
                     )}         
                 </div>                        
             )}
-
             <div className={styles.row}>
                     <div className={`${styles.containerLanguage} ${styles.bootstrap}`} onClick={()=>{
                         setShowCode(true)
@@ -501,6 +500,61 @@ export default Main
                         </div>
                     </div>
             </div>
+            <div className={styles.code}>
+                {code === 'bootstrap' && (
+                       <div className={styles.languageCode}>
+                        <h1 className={styles.languageName}>Bootstrap - HTML</h1>
+                        <pre className={styles.coding}>
+                            {`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <link href="bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="">Welcome<h1> 
+    <button class="btn btn-primary">button<button>   
+    <img src="#" alt='#' class="rounded"/>  
+    <form>
+      <div class="form-group">
+        <label for="nome">Nome: </label>
+        <input type="text" class="form-control">
+      </div>
+      <button class="btn btn-info">Enviar</button>
+    </form>
+</body>
+</html>`}    
+                        </pre>
+                        </div> 
+                    )} 
+                {code === 'jquery' && (
+                       <div className={styles.languageCode}>
+                        <h1 className={styles.languageName}>Jquery - Javascript</h1>
+                        <pre className={styles.coding}>
+                            {`const name = $('#name').val()
+const id = $('#id').val()                               
+$('main').css({backgroundColor: red})                       
+$('.button').on('click',()=>{
+    $.post('/Carrinho',{id:id,name:name})                     
+    .done(data=>{
+        $('#curtidos').html(data)
+    }).fail(err=>console.log(err))  
+})                     
+                 
+$('#coletar').on('click',()=>{
+    $.get(/Produtos?categoria='roupas')
+    .done(data=>{
+        $('.Produtos').html(data)
+    }).fail(err=>console.log(err))
+})
+                        
+                        
+`}    
+                        </pre>
+                        </div> 
+                    )}    
+            </div>
+            
             </section>
         </main>
         </div>
