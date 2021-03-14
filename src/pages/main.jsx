@@ -180,7 +180,9 @@ pokemon?offset=0&limit=15')
                        <div className={styles.languageCode}>
                         <h1 className={styles.languageName}>C#</h1>
                         <pre className={styles.coding}>
-                            {`namespace Exemplo{
+                            {`
+using System;
+namespace Exemplo{
   class Program{
     static void Main(string[] args){
       do{
@@ -325,7 +327,7 @@ if(goal < 0):
                 </div>                        
             )}
 
-            <h2>Bibliotecas e Frameworks</h2>
+            <h2 className={styles.language}>Bibliotecas e Frameworks</h2>
             
             <div className={styles.row}>
                     <div className={`${styles.containerLanguage} ${styles.react}`} onClick={()=>{
@@ -350,7 +352,7 @@ if(goal < 0):
 
                     <div className={`${styles.containerLanguage} ${styles.asp}`} onClick={()=>{
                         setShowCode(true)
-                        setCode('asp.netcore mvc')
+                        setCode('asp')
                     }}>
                         <div className={styles.center}>
                             <img src={asp} alt="asp.netcore mvc" className={styles.image}/>
@@ -358,6 +360,125 @@ if(goal < 0):
                         </div>
                     </div>
             </div>
+
+            {showCode && (                   
+                <div className={styles.code}>
+                    {code === 'react' && (
+                       <div className={styles.languageCode}>
+                        <h1 className={styles.languageName}>React - Javascript</h1>
+                        <pre className={styles.coding}>
+                            {`import React,{useState,useEffect} from 'react'
+import Header from './Header'
+import styles from '../styles/Main.module.css
+
+export function Main(){
+    const [title,setTitle] = useState('Pagina 1')
+    const [back,setBack] = useState(styles.white)
+    const [init,setInit] = useState(0)
+    const array = []
+
+    useEffect(()=>{
+        fetch('https://apiExemplo?init='{init}')
+        .then(response=>response.json())
+        .then(data=>array.push(data))
+    },[title])
+
+    return(
+        <div className={back}>
+            <Header/>
+            <h1>{title}</h1>
+
+            {array.map(item=>(
+                <ul>
+                    <li>{item.name}</li>
+                    <li>{item.status}</li>
+                    <li>{item.age}</li>
+                </ul>
+            ))}
+            <button onClick={()=>{
+                setTitle('Pagina 2')
+                setInit(init+15)
+            }}>Atualizar dados</button>
+
+        </div>
+    )
+}`}    
+                        </pre>
+                        </div> 
+                    )}
+                    {code === 'react-native' && (
+                       <div className={styles.languageCode}>
+                        <h1 className={styles.languageName}>React-Native - Javascript</h1>
+                        <pre className={styles.coding}>
+                            {`import React,{Component} from 'react'
+import {View,Text} from 'react-native'
+import Header from './Header'
+import styles from '../styles/Main
+
+class Main extends Component{
+    constructor(){
+        this.state = {
+            age: 18
+        }
+        this.calcAge = this.calcAge.bind(this)
+    }
+
+    calcAge(){
+        let data = new Date()
+        this.setState({age:2003-data.getFullYear})
+    }
+
+    render(){
+        return(
+            <View style={styles.container}>
+                <Header/>
+                <Text>Name: {this.props.name}</Text>
+                <Text>Age: {this.state.age}</Text>
+            </View>
+        )
+    }
+}
+
+export default Main
+
+`}    
+                        </pre>
+                        </div> 
+                    )} 
+                    {code === 'asp' && (
+                       <div className={styles.languageCode}>
+                        <h1 className={styles.languageName}>Aps.netcore mvc - C#</h1>
+                        <pre className={styles.coding}>
+                            {`@model ViewModel
+@{
+    viewData['title'] = 'Lista';
+    List<Produto> list = ViewModel.lista
+}
+<link rel="stylesheet" href="~/css/lista.css"/>
+<div>
+    @await Html.PartialAsync('_Header')
+    @if(list.lenght == 0){
+        <h1>Sem produtos na lista!</h1>
+    }else{
+        <h1>Listagem de Produtos: <h1>
+        <ul>
+            @foreach(Produto item in Model.lista){
+                <div>
+                    <li>Nome: @item.name</li>
+                    <li>Preço: @item.price</li>
+                </div>
+            }
+        </ul>
+    }
+    <a asp-action="HomePage" asp-controller="Home">Voltar</a>
+
+<div>
+                        `}    
+                        </pre>
+                        </div> 
+                    )}         
+                </div>                        
+            )}
 
             <div className={styles.row}>
                     <div className={`${styles.containerLanguage} ${styles.bootstrap}`} onClick={()=>{
