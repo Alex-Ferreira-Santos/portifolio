@@ -7,6 +7,12 @@ import csharp from '../img/csharp.png'
 import sql from '../img/sql.png'
 import php from '../img/php.png'
 import python from '../img/python.png'
+import react from '../img/react.png'
+import reactNative from '../img/reactNative.png'
+import asp from '../img/asp.png'
+import bootstrap from '../img/bootstrap.png'
+import jquery from '../img/jquery.png'
+
 
 function Main(){
     const [showCode,setShowCode] = useState(false)
@@ -318,7 +324,62 @@ if(goal < 0):
                     )}          
                 </div>                        
             )}
+
+            <h2>Bibliotecas e Frameworks</h2>
             
+            <div className={styles.row}>
+                    <div className={`${styles.containerLanguage} ${styles.react}`} onClick={()=>{
+                        setShowCode(true)
+                        setCode('react')
+                        }}>
+                        <div className={styles.center}>
+                            <img src={react} alt="react" className={styles.image}/>
+                            <p className={styles.lgn}>React</p>
+                        </div> 
+                    </div>
+                    
+                    <div className={`${styles.containerLanguage} ${styles.native}`} onClick={()=>{
+                        setShowCode(true)
+                        setCode('react-native')
+                    }}>
+                        <div className={styles.center}>
+                            <img src={reactNative} alt="react-native" className={styles.image}/>
+                            <p className={styles.lgn}>React-native</p>
+                        </div>
+                    </div>
+
+                    <div className={`${styles.containerLanguage} ${styles.asp}`} onClick={()=>{
+                        setShowCode(true)
+                        setCode('asp.netcore mvc')
+                    }}>
+                        <div className={styles.center}>
+                            <img src={asp} alt="asp.netcore mvc" className={styles.image}/>
+                            <p className={styles.lgn}>asp.netcore mvc</p>
+                        </div>
+                    </div>
+            </div>
+
+            <div className={styles.row}>
+                    <div className={`${styles.containerLanguage} ${styles.bootstrap}`} onClick={()=>{
+                        setShowCode(true)
+                        setCode('bootstrap')
+                        }}>
+                        <div className={styles.center}>
+                            <img src={bootstrap} alt="bootstrap" className={styles.image}/>
+                            <p className={`${styles.lgn} ${styles.left}`}>Bootstrap</p>
+                        </div> 
+                    </div>
+                    
+                    <div className={`${styles.containerLanguage} ${styles.jquery}`} onClick={()=>{
+                        setShowCode(true)
+                        setCode('jquery')
+                    }}>
+                        <div className={styles.center}>
+                            <img src={jquery} alt="jquey" className={styles.image}/>
+                            <p className={styles.lgn}>Jquery</p>
+                        </div>
+                    </div>
+            </div>
             </section>
         </main>
         </div>

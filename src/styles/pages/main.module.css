@@ -173,6 +173,31 @@
     border: 1px solid#7A9B1D; 
 }
 
+.react{
+    background-color: #93D6FC;
+    border: 1px solid#0BA7FF; 
+}
+
+.native{
+    background-color: #B8FFFF;
+    border: 1px solid#0BFFFF; 
+}
+
+.asp{
+    background-color: #C2FFBD;
+    border: 1px solid#14FF00; 
+}
+
+.bootstrap{
+    background-color: #D1A4FE;
+    border: 1px solid#850BFF; 
+}
+
+.jquery{
+    background-color: #8FAFFF;
+    border: 1px solid#0B4FFF; 
+}
+
 .lgn{
     font-size: 1.3rem
 }
