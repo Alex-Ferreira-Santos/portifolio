@@ -3,6 +3,10 @@ import styles from '../styles/pages/main.module.css'
 import Stack from '../components/stack'
 import icon from '../img/iconSquare.png'
 import reactNative from '../img/reactNative.png'
+import logo from '../img/logo.png'
+import proffy from '../img/proffy.png'
+import happy from '../img/happy.png'
+import smartStyle from '../img/smartStyle.png'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -71,30 +75,36 @@ function Main(){
                 <div className={styles.carousel}>
                     <Carousel responsive={responsive}>
                         
-                            <div className={styles.item}>  
-                                <a href="" className={styles.project}>
-                                    <img src={icon} alt="react" className={styles.itemImage}/>
-                                    <p>Simpledex</p>
-                                </a>
-                            </div>
+                        <div className={styles.item}>  
+                            <a href="" className={styles.project}>
+                                <img src={icon} alt="react" className={styles.itemImage}/>
+                                <p>Simpledex</p>
+                            </a>
+                        </div>
 
                         
                         <div className={styles.item}>
                             <a href="" className={styles.project}>
-                            <img src={icon} alt="react" className={styles.itemImage}/>
-                            <p>Simpledex</p>
-                            </a>
-                        </div>
-                        <div className={styles.item}>
-                        <a href="" className={styles.project}>
-                            <img src={icon} alt="react" className={styles.itemImage}/>
-                            <p>Simpledex</p>
+                                <img src={logo} alt="react" className={styles.itemImage}/>
+                                <p>Artes de lineh</p>
                             </a>
                         </div>
                         <div className={styles.item}>
                             <a href="" className={styles.project}>
-                            <img src={icon} alt="react" className={styles.itemImage}/>
-                            <p>Simpledex</p>
+                                <img src={proffy} alt="react" className={styles.itemImage}/>
+                                <p>Proffy</p>
+                            </a>
+                        </div>
+                        <div className={styles.item}>
+                            <a href="" className={styles.project}>
+                                <img src={happy} alt="react" className={styles.itemImage}/>
+                                <p>Happy</p>
+                            </a>
+                        </div>
+                        <div className={styles.item}>
+                            <a href="" className={styles.project}>
+                                <img src={smartStyle} alt="react" className={styles.itemImage}/>
+                                <p>Happy</p>
                             </a>
                         </div>
                     </Carousel>
