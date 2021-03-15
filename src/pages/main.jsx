@@ -1,6 +1,29 @@
 import React from 'react';
 import styles from '../styles/pages/main.module.css'
 import Stack from '../components/stack'
+import icon from '../img/iconSquare.png'
+import reactNative from '../img/reactNative.png'
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
+const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+};
 
 function Main(){
     return(
@@ -45,6 +68,37 @@ function Main(){
             </section>
             <section className={styles.section}>
                 <h1>Projetos</h1>
+                <div className={styles.carousel}>
+                    <Carousel responsive={responsive}>
+                        
+                            <div className={styles.item}>  
+                                <a href="" className={styles.project}>
+                                    <img src={icon} alt="react" className={styles.itemImage}/>
+                                    <p>Simpledex</p>
+                                </a>
+                            </div>
+
+                        
+                        <div className={styles.item}>
+                            <a href="" className={styles.project}>
+                            <img src={icon} alt="react" className={styles.itemImage}/>
+                            <p>Simpledex</p>
+                            </a>
+                        </div>
+                        <div className={styles.item}>
+                        <a href="" className={styles.project}>
+                            <img src={icon} alt="react" className={styles.itemImage}/>
+                            <p>Simpledex</p>
+                            </a>
+                        </div>
+                        <div className={styles.item}>
+                            <a href="" className={styles.project}>
+                            <img src={icon} alt="react" className={styles.itemImage}/>
+                            <p>Simpledex</p>
+                            </a>
+                        </div>
+                    </Carousel>
+                </div>
             </section>
         </main>
         </div>
