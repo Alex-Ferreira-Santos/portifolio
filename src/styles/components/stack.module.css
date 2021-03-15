@@ -1,0 +1,178 @@
+.html{
+    background-color: #DFA98B;
+    border: 1px solid#CD6125;
+}
+
+.css{
+    background-color: #A6F4FF;
+    border: 1px solid#00B5B5;
+}
+
+.js{
+    background-color: #FBFF4B;
+    border: 1px solid#AAAD01;
+}
+
+.csharp{
+    background-color: #8DDA99;
+    border: 1px solid#208C31;
+}
+
+.left{
+    margin-left: 1rem;
+}
+
+.sql{
+    background-color: #71AAFF;
+    border: 1px solid#0066FF;
+}
+
+.php{
+    background-color: #9A9EFF;
+    border: 1px solid#434BFC; 
+}
+
+.python{
+    background-color: #CEE8A4;
+    border: 1px solid#7A9B1D; 
+}
+
+.react{
+    background-color: #93D6FC;
+    border: 1px solid#0BA7FF; 
+}
+
+.native{
+    background-color: #B8FFFF;
+    border: 1px solid#0BFFFF; 
+}
+
+.asp{
+    background-color: #C2FFBD;
+    border: 1px solid#14FF00; 
+}
+
+.bootstrap{
+    background-color: #D1A4FE;
+    border: 1px solid#850BFF; 
+}
+
+.jquery{
+    background-color: #8FAFFF;
+    border: 1px solid#0B4FFF; 
+}
+
+.lgn{
+    font-size: 1.3rem
+}
+
+.containerLanguage{
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-radius: 20px;
+    flex-direction: column;
+    cursor: pointer;
+    transition: .3s;
+    
+}
+
+.containerLanguage:hover{
+    transform: translateX(-5px) translateY(-5px);
+    box-shadow: 1px 1px black;
+}
+
+.image{
+    width: 5rem;
+}
+
+.languageCode{
+    margin: auto;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+
+.code{
+    background-color: lightgray;
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.languageName{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.coding{
+    font-size: 1rem;
+    font-family: monospace;
+}
+.row{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin: auto;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.subtitle{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media(max-width:768px){
+    .containerLanguage{
+        padding-right: .5rem;
+        padding-left: .5rem;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    .image{
+        width: 3rem;
+    }
+    .coding{
+        font-size: 1.2rem;
+        max-width: 90%;
+    }
+    .lgn{
+        font-size: 1.4rem
+    }
+    .code{
+        background-color: lightgray;
+        width: 85%;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .languageName{
+        display:flex;
+        justify-content: flex-end;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 425px){
+    .image{
+        width: 1.5rem;
+    }
+    .lgn{
+        font-size: .8rem
+    }
+    .coding{
+        font-size: .7rem;
+        max-width: 90%;
+    }
+    .languageCode{
+        padding-left: 0;
+    }
+    .subtitle{
+        font-size: 1rem
+    }
+}

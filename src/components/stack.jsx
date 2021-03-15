@@ -11,7 +11,7 @@ import reactNative from '../img/reactNative.png'
 import asp from '../img/asp.png'
 import bootstrap from '../img/bootstrap.png'
 import jquery from '../img/jquery.png'
-import styles from '../styles/pages/main.module.css'
+import styles from '../styles/components/stack.module.css'
 
 export default function Stack(){
     const [showCode,setShowCode] = useState(false)
@@ -130,7 +130,7 @@ pokemon?offset=0&limit=15')
                         }}>
                         <div className={styles.center}>
                             <img src={csharp} alt="c#" className={styles.image}/>
-                            <p className={`${styles.lgn} ${styles.left}`}>C#</p>
+                            <p className={`${styles.lgn}`}>C#</p>
                         </div> 
                     </div>
                     
@@ -467,7 +467,7 @@ export default Main
                         }}>
                         <div className={styles.center}>
                             <img src={bootstrap} alt="bootstrap" className={styles.image}/>
-                            <p className={`${styles.lgn} ${styles.left}`}>Bootstrap</p>
+                            <p className={`${styles.lgn}`}>Bootstrap</p>
                         </div> 
                     </div>
                     

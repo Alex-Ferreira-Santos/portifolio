@@ -1,0 +1,29 @@
+.item{
+    background-color: #ACBCC1; 
+    width: 10rem;
+    margin: auto;
+    border-radius: 1rem;
+    transition: .3s;
+    margin-top: 1rem;
+}
+
+.item:hover{
+    transform: translateX(-5px) translateY(-5px);
+    
+}
+
+.itemImage{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 1rem;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+.project{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 1rem; 
+}
