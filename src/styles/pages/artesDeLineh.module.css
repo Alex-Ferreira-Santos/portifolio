@@ -23,17 +23,30 @@
     padding: 1rem;
     border-radius: 20px;
     width: 12rem;
-    margin-left: 6rem;
+    margin-left: 1.5rem;
     text-align: center;
     transition: .3s;
 }
 
 .install:hover{
-    background-color: rgb(0, 179, 0);
+    background-color: #00b300;
+}
+
+.github{
+    background-color: #141414;
+    border: 1px solid white;
+}
+
+.github:hover{
+    background-color: #252525;
+}
+
+.buttons{
+    display: flex;
 }
 
 .image{
-    width: 20rem;
+    width: 25rem;
     height: 20rem;
     border-radius: 50px;
     margin:2rem;

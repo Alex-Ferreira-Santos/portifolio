@@ -6,7 +6,7 @@ import 'react-multi-carousel/lib/styles.css';
 import {Project} from '../components/Project'
 
 import simpledex from '../img/simpledex/iconSquare.png'
-import logo from '../img/logo.png'
+import logo from '../img/artes/logo.png'
 import proffy from '../img/proffy.png'
 import happy from '../img/happy.png'
 import smartStyle from '../img/smartStyle.png'
