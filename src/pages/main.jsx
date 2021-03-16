@@ -5,7 +5,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import {Project} from '../components/Project'
 
-import icon from '../img/iconSquare.png'
+import simpledex from '../img/simpledex/iconSquare.png'
 import logo from '../img/logo.png'
 import proffy from '../img/proffy.png'
 import happy from '../img/happy.png'
@@ -83,7 +83,7 @@ function Main(){
                 <h1>Projetos</h1>
                 <div className={styles.carousel}>
                     <Carousel responsive={responsive}>
-                        <Project img={icon} name='Simpledex' route='/simpledex'/>
+                        <Project img={simpledex} name='Simpledex' route='/simpledex'/>
                         <Project img={logo} name='Artes de lineh' route='/artesDeLineh'/>
                         <Project img={proffy} name='Proffy'route='proffy'/>
                         <Project img={happy} name='Happy' route='happy'/>
