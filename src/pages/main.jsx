@@ -83,15 +83,15 @@ function Main(){
                 <h1>Projetos</h1>
                 <div className={styles.carousel}>
                     <Carousel responsive={responsive}>
-                        <Project img={icon} name='Simpledex'/>
-                        <Project img={logo} name='Artes de lineh'/>
-                        <Project img={proffy} name='Proffy'/>
-                        <Project img={happy} name='Happy'/>
-                        <Project img={smartStyle} name='Smart style'/>
-                        <Project img={cronometro} name='Cronômetro'/>
-                        <Project img={tarefas} name='Tarefas'/>
-                        <Project img={moveIt} name='Move.it'/>
-                        <Project img={bazzaar} name='BAZZAAR'/>
+                        <Project img={icon} name='Simpledex' route='/simpledex'/>
+                        <Project img={logo} name='Artes de lineh' route='/artesDeLineh'/>
+                        <Project img={proffy} name='Proffy'route='proffy'/>
+                        <Project img={happy} name='Happy' route='happy'/>
+                        <Project img={smartStyle} name='Smart style' route='smartStyle'/>
+                        <Project img={cronometro} name='Cronômetro' route='cronometro'/>
+                        <Project img={tarefas} name='Tarefas' route='tarefas'/>
+                        <Project img={moveIt} name='Move.it' route='moveIt'/>
+                        <Project img={bazzaar} name='BAZZAAR' route='bazzaar'/>
                     </Carousel>
                 </div>
             </section>
