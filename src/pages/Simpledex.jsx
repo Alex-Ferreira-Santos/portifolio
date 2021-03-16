@@ -8,14 +8,15 @@ import img3 from '../img/simpledex/foto-pt-3.jpg';
 import img4 from '../img/simpledex/foto-pt-4.jpg';
 import img5 from '../img/simpledex/foto-pt-5.jpg';
 import img6 from '../img/simpledex/foto-pt-6.jpg';
+import apk from '../apk/Simpledex.apk'
 
 const responsive = {
     superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
+      breakpoint: { max: 4000, min: 2550 },
       items: 6
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 2550, min: 1024 },
       items: 5
     },
     desktop2: {
@@ -37,11 +38,11 @@ export function Simpledex(){
         <div>
             <main className={styles.container}>
                 <div className={styles.description}>
-                    <div>
+                    <div className={styles.icon}>
                         <img src={simpledex} alt="Icone do Simpledex" className={styles.image}/> 
-                        <button className={styles.install}>Baixar</button>
+                        <a href={apk} download='Simpledex' className={styles.install}>Baixar</a>
                     </div>
-                    <div>
+                    <div className={styles.detail}>
                         <h1 className={styles.title}>Simpledex</h1>
                         <h3 className={styles.h3}>Uma pokédex simples com dados de seus pokémons favoritos.</h3>
                         <p>Simpledex é uma pokédex feita por um fã criada para você poder ver os dados de todos os seus pokémons favoritos.</p>
@@ -61,22 +62,22 @@ export function Simpledex(){
                 <div className={styles.line}/>
                 <h1 className={styles.imagens}>Imagens</h1> 
                 <Carousel responsive={responsive} className={styles.carousel}>
-                    <div>
+                    <div style={{textAlign:'center'}}>
                         <img src={img1} alt="imagem 1" className={styles.img}/>
                     </div>
-                    <div>
+                    <div style={{textAlign:'center'}}>
                         <img src={img2} alt="imagem 2" className={styles.img}/>
                     </div>
-                    <div>
+                    <div style={{textAlign:'center'}}>
                         <img src={img3} alt="imagem 3" className={styles.img}/>
                     </div>
-                    <div>
+                    <div style={{textAlign:'center'}}>
                         <img src={img4} alt="imagem 4" className={styles.img}/>
                     </div>
-                    <div>
+                    <div style={{textAlign:'center'}}>
                         <img src={img5} alt="imagem 5" className={styles.img}/>
                     </div>
-                    <div>
+                    <div style={{textAlign:'center'}}>
                         <img src={img6} alt="imagem 6" className={styles.img}/>
                     </div>
                 </Carousel>    
