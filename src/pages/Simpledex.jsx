@@ -57,6 +57,7 @@ export function Simpledex(){
                             <li>O nome das habilidades</li>
                             <li>Até a altura e peso</li>
                         </ul>  
+                        <p className={styles.space}>Projeto desenvolvido em React-native</p>
                     </div>
                 </div>
                 <div className={styles.line}/>

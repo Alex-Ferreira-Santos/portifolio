@@ -15,7 +15,7 @@
 }
 
 .install{
-    background-color: green;
+    background-color: #141414;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,21 +23,13 @@
     padding: 1rem;
     border-radius: 20px;
     width: 12rem;
-    margin-left: 1.5rem;
+    margin-left: 7rem;
     text-align: center;
     transition: .3s;
-}
-
-.install:hover{
-    background-color: #00b300;
-}
-
-.github{
-    background-color: #141414;
     border: 1px solid white;
 }
 
-.github:hover{
+.install:hover{
     background-color: #252525;
 }
 
@@ -87,7 +79,7 @@
 }
 
 .img{
-    width: 10rem;
+    width: 30rem;
     border: .3rem solid #c4c4c4;
     border-radius: 20px
 }
@@ -136,11 +128,14 @@
     .install{
         margin-left: 1rem;
         padding: 1rem;
-        font-size: 2rem;
-        width: 50%;
+        font-size: 1.5rem;
+        width: auto;
     }
     .detail{
         font-size: .8rem;
         margin-left: .5rem;
+    }
+    .img{
+        width: 100%;
     }
 }
