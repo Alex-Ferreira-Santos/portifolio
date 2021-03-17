@@ -22,7 +22,7 @@
     font-size: 2rem;
     padding: 1rem;
     border-radius: 20px;
-    width: 12rem;
+    width: auto;
     margin-left: 7rem;
     text-align: center;
     transition: .3s;
@@ -97,6 +97,7 @@
     .install{
         padding: 2rem;
         font-size: 3rem;
+        margin-left: 4rem;
     }
 }
 @media(max-width:660px){
@@ -107,7 +108,8 @@
     .install{
         padding: 2rem;
         font-size: 3rem;
-        margin-left: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 @media(max-width:575px){

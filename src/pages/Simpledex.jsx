@@ -2,6 +2,7 @@ import styles from '../styles/pages/simpledex.module.css';
 import simpledex from '../img/simpledex/iconSquare.png'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import {CarouselItem} from '../components/CarouselItem'
 import img1 from '../img/simpledex/foto-pt-1.jpg';
 import img2 from '../img/simpledex/foto-pt-2.jpg';
 import img3 from '../img/simpledex/foto-pt-3.jpg';
@@ -63,24 +64,12 @@ export function Simpledex(){
                 <div className={styles.line}/>
                 <h1 className={styles.imagens}>Imagens</h1> 
                 <Carousel responsive={responsive} className={styles.carousel}>
-                    <div style={{textAlign:'center'}}>
-                        <img src={img1} alt="imagem 1" className={styles.img}/>
-                    </div>
-                    <div style={{textAlign:'center'}}>
-                        <img src={img2} alt="imagem 2" className={styles.img}/>
-                    </div>
-                    <div style={{textAlign:'center'}}>
-                        <img src={img3} alt="imagem 3" className={styles.img}/>
-                    </div>
-                    <div style={{textAlign:'center'}}>
-                        <img src={img4} alt="imagem 4" className={styles.img}/>
-                    </div>
-                    <div style={{textAlign:'center'}}>
-                        <img src={img5} alt="imagem 5" className={styles.img}/>
-                    </div>
-                    <div style={{textAlign:'center'}}>
-                        <img src={img6} alt="imagem 6" className={styles.img}/>
-                    </div>
+                    <CarouselItem img={img1} alt='imagem 1' classNa={styles.img}/>
+                    <CarouselItem img={img2} alt='imagem 2' classNa={styles.img}/>
+                    <CarouselItem img={img3} alt='imagem 3' classNa={styles.img}/>
+                    <CarouselItem img={img4} alt='imagem 4' classNa={styles.img}/>
+                    <CarouselItem img={img5} alt='imagem 5' classNa={styles.img}/>
+                    <CarouselItem img={img6} alt='imagem 6' classNa={styles.img}/>
                 </Carousel>    
             </main>
         </div>
