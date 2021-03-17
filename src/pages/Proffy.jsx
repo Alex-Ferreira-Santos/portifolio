@@ -53,7 +53,7 @@ export function Proffy(){
                         <h1 className={styles.title}>Proffy</h1>
                         <h3 className={styles.h3}>Uma plataforma de conexão entre alunos e professores</h3>
                         <p>Proffy foi um projeto full stack feito no evento NLW#2 da <a href="https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg" target='_blank' rel='noopener noreferrer'>Rocketseat</a></p>
-                        <p className={styles.space}>Esse projeto teve a versão em <b>HTML, CSS, JS</b> e outra versão em <b>React, React Native</b> e uma <b>API em Node</b>.</p>
+                        <p className={styles.space}>Esse projeto teve a versão em <b>HTML, CSS, JS e SQLite</b> e outra versão em <b>React, React Native</b> e uma <b>API em Node</b>.</p>
                         <p className={styles.space}>A ideia do projeto era professores se cadastrarem com suas habilidades para alunos irem buscar seus conhecimentos com um professor diretamente.</p>
                         <h3 className={styles.h3}>As funcionalidades da plataforma:</h3>
                         <ul className={styles.lista}>

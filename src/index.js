@@ -5,6 +5,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import { Simpledex } from './pages/Simpledex';
 import {ArtesDeLineh} from './pages/ArtesDeLineh'
 import {Proffy} from './pages/Proffy'
+import {Happy} from './pages/Happy'
 
 ReactDOM.render(
   <BrowserRouter>
@@ -13,6 +14,7 @@ ReactDOM.render(
       <Route path='/simpledex' component={Simpledex}/>
       <Route path='/artesDeLineh' component={ArtesDeLineh}/>
       <Route path='/proffy' component={Proffy}/>
+      <Route path='/happy' component={Happy}/>
     </Switch>
   </BrowserRouter>,
   document.getElementById('root')
