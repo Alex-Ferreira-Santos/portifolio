@@ -66,15 +66,54 @@ function Main(){
                 <h2 className={styles.subtitle}>Formação</h2>
                 <div className={styles.school}>
                     <ul>
-                        <li className={styles.data}>Ensino médio completo</li>
-                        <li className={styles.data}>Cursando técnico em informática para a internet no Senac</li>
+                        <li className={styles.listItem}>Ensino médio completo</li>
+                        <li className={styles.listItem}>Cursando técnico em informática para a internet no Senac</li>
+                    </ul> 
+                </div>
+                <h2 className={styles.subtitle}>Cursos</h2>
+                <div className={styles.school}>
+                    <ul>
+                        <h3 className={styles.listItem}>Curso em video</h3>
+                        <ul>
+                            <li className={styles.dataInside}>Curso de Python3 básico</li>
+                            <li className={styles.dataInside}>Curso de PHP para iniciantes</li>
+                            <li className={styles.dataInside}>Curso de POO PHP</li>   
+                            <li className={styles.dataInside}>Curso de HTMl5</li> 
+                            <li className={styles.dataInside}>Curso de Javascript</li> 
+                            <li className={styles.dataInside}>Curso de Word 2016</li> 
+                            <li className={styles.dataInside}>Curso de Excel 2016</li> 
+                            <li className={styles.dataInside}>Curso de Git e GitHub</li> 
+                        </ul>
+                        <h3 className={styles.listItem}>Fundação Bradesco</h3> 
+                        <ul>
+                            <li className={styles.dataInside}>HTLM, CSS na prática</li> 
+                            <li className={styles.dataInside}>Inovando com CSS</li> 
+                            <li className={styles.dataInside}>Introdução ao Javascript</li> 
+                            <li className={styles.dataInside}>Linguagem de programação C# básico e avançado</li> 
+                            <li className={styles.dataInside}>Linguagem de programação Java básico</li> 
+                            <li className={styles.dataInside}>Microsoft Word 2016 básico, intermediario e avançado</li> 
+                            <li className={styles.dataInside}>Microsoft Excel 2016 básico, intermediario e avançado</li> 
+                        </ul>
+                        <h3 className={styles.listItem}>LinkedIn Learning</h3>
+                        <ul>
+                            <li className={styles.dataInside}>HTLM, CSS na prática</li> 
+                            <li className={styles.dataInside}>Learning Python</li> 
+                        </ul>
+                        <h3 className={styles.listItem}>Rocketseat</h3>
+                        <ul>
+                            <li className={styles.dataInside}>Curso de Javascript</li>
+                            <li className={styles.dataInside}>Curso de ES6</li>
+                            <li className={styles.dataInside}>Curso de Node.js</li>
+                            <li className={styles.dataInside}>Curso de React.js</li>
+                            <li className={styles.dataInside}>Curso de React Native</li>
+                        </ul>
                     </ul> 
                 </div>
                 <h2 className={styles.subtitle}>Idiomas</h2>
                 <div className={styles.school}>
                     <ul>
-                        <li className={styles.data}>Português nativo</li>
-                        <li className={styles.data}>Inglês intermediario</li>
+                        <li className={styles.listItem}>Português nativo</li>
+                        <li className={styles.listItem}>Inglês intermediario</li>
                     </ul> 
                 </div>
                 

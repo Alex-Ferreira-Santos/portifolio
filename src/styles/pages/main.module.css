@@ -94,14 +94,27 @@
 
 .school{
     display: flex;
-    justify-content:center;
     align-items:center;
+    justify-content: center;
     width: 90%;
     margin: auto;
+    text-align: left;
 }
 
 .data{
     font-size: 1.2rem;
+    display:flex;
+}
+
+.listItem{
+    font-size: 1.2rem;
+    display: flex;
+}
+
+.dataInside{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    display: flex;
 }
 
 .carousel{
@@ -192,7 +205,7 @@
     .subtitle{
         font-size: 1rem
     }
-    .data{
+    .data,.dataInisde,.listItem{
         font-size: .8rem;
     }
 }
