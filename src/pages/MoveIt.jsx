@@ -1,7 +1,7 @@
 import styles from '../styles/pages/proffy.module.css'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import smartStyle from '../img/smartStyle/smartStyle.png';
+import moveIt from '../img/moveIt/move-it.png';
 import home from '../img/smartStyle/home.png';
 import products from '../img/smartStyle/products.png';
 import login from '../img/smartStyle/login.png';
@@ -37,30 +37,29 @@ const responsive = {
     }
 };
 
-export function SmartStyle(){
+export function MoveIt(){
     return(
         <div>
             <main className={styles.container}>
                 <div className={styles.description}>
                     <div className={styles.icon}>
-                        <img src={smartStyle} alt="Logo do Smart Style" className={styles.image}/> 
+                        <img src={moveIt} alt="Logo do Move.it" className={styles.image}/> 
                         <div className={styles.buttons}>
                            <a href='https://github.com/Alex-Ferreira-Santos/e-commerce-de-moda' className={`${styles.install} ${styles.github}`} target='_blank' rel='noopener noreferrer'>Ver no Github</a> 
                         </div>
                         
                     </div>
                     <div className={styles.detail}>
-                        <h1 className={styles.title}>Smart Style</h1>
-                        <h3 className={styles.h3}>Um e-commerce de moda</h3>
-                        <p>Smart Style foi uma atividade do meu curso que se tratava de criar um e-commerce de moda em <b>asp.net core mvc</b></p>
-                        <p>Tive dificuldade na hora de colocar a função de favoritos e carrinho por ter feito com javascript e não em uma tabela no MySql</p>
-                        <p className={styles.space}>Esse projeto foi desenvolvido em <b>asp.net core mvc</b> e foi aplicado também <b>bootstrap</b>, <b>AJAX</b>, <b>jquery</b>, <b>MySql</b> para as consultas.</p>
-                        <h3 className={styles.h3}>As funcionalidades do site:</h3>
+                        <h1 className={styles.title}>Move.it</h1>
+                        <h3 className={styles.h3}>Uma plataforma para controle trabalho</h3>
+                        <p>Move.it foi um projeto desenvolvido durante a NLW#4 feita em React</p>
+                        <p className={styles.space}>A ideia do projeto era fazer uma plataforma onde a pessoa tem que fazer um exercício a cada 25 minutos para poder se manter saúdavel</p>
+                        <h3 className={styles.h3}>As funcionalidades da plataforma:</h3>
                         <ul className={styles.lista}>
-                            <li>Ver e filtrar produtos</li>
-                            <li>Inserir, atualizar, selecionar e atualizar dados dos produtos e usuários</li>
-                            <li>Criar conta para autenticação</li>
-                            <li>Conta adm e conta usuário</li>
+                            <li>Pegar avatar do GitHub</li>
+                            <li>Gerar um desafio a cada 25 minutos</li>
+                            <li>Desafios fisicos e com a visão</li>
+                            <li>Passar de level</li>
                         </ul>  
                     </div>
                 </div>

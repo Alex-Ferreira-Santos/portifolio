@@ -12,7 +12,7 @@ import happy from '../img/happy/happy.png'
 import smartStyle from '../img/smartStyle/smartStyle.png'
 import cronometro from '../img/cronometro.png'
 import tarefas from '../img/tarefas.png'
-import moveIt from '../img/move-it.png'
+import moveIt from '../img/moveIt/move-it.png'
 import bazzaar from '../img/bazzaar.png'
 
 const responsive = {
@@ -96,7 +96,7 @@ function Main(){
                     </div>                 
                     <div className={styles.institution}>
                         <h3 className={styles.listTitle}>LinkedIn Learning</h3>
-                        <p className={styles.dataInside}>HTLM, CSS na prática</p> 
+                        <p className={styles.dataInside}>HTLM Essencial Learning</p> 
                         <p className={styles.dataInside}>Learning Python</p> 
                     </div>
                     <div className={styles.institution}>
@@ -121,8 +121,8 @@ function Main(){
                 <h1>Projetos</h1>
                 <div className={styles.carousel}>
                     <Carousel responsive={responsive}>
-                        <Project img={simpledex} name='Simpledex' route='/simpledex'/>
-                        <Project img={logo} name='Artes de lineh' route='/artesDeLineh'/>
+                        <Project img={simpledex} name='Simpledex' route='simpledex'/>
+                        <Project img={logo} name='Artes de lineh' route='artesDeLineh'/>
                         <Project img={proffy} name='Proffy'route='proffy'/>
                         <Project img={happy} name='Happy' route='happy'/>
                         <Project img={smartStyle} name='Smart style' route='smartStyle'/>
