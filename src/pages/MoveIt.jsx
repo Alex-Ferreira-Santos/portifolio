@@ -2,12 +2,10 @@ import styles from '../styles/pages/proffy.module.css'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import moveIt from '../img/moveIt/move-it.png';
-import home from '../img/smartStyle/home.png';
-import products from '../img/smartStyle/products.png';
-import login from '../img/smartStyle/login.png';
-import homeLogged from '../img/smartStyle/homelogged.png';
-import del from '../img/smartStyle/delete.png';
-import carrinho from '../img/smartStyle/carrinho.png';
+import home from '../img/moveIt/home.png';
+import login from '../img/moveIt/Login.png';
+import challenge from '../img/moveIt/challenge.png';
+import nextLevel from '../img/moveIt/nextLevel.png';
 import {CarouselItem} from '../components/CarouselItem';
 
 const responsive = {
@@ -52,7 +50,7 @@ export function MoveIt(){
                     <div className={styles.detail}>
                         <h1 className={styles.title}>Move.it</h1>
                         <h3 className={styles.h3}>Uma plataforma para controle trabalho</h3>
-                        <p>Move.it foi um projeto desenvolvido durante a NLW#4 feita em React</p>
+                        <p>Move.it foi um projeto desenvolvido durante a NLW#4 feita em Next.js</p>
                         <p className={styles.space}>A ideia do projeto era fazer uma plataforma onde a pessoa tem que fazer um exercício a cada 25 minutos para poder se manter saúdavel</p>
                         <h3 className={styles.h3}>As funcionalidades da plataforma:</h3>
                         <ul className={styles.lista}>
@@ -67,11 +65,9 @@ export function MoveIt(){
                 <h1 className={styles.imagens}>Imagens</h1> 
                 <Carousel responsive={responsive} className={styles.carousel}>
                     <CarouselItem img={home} alt='imagem 1' classNa={styles.img}/>
-                    <CarouselItem img={products} alt='imagem 2' classNa={styles.img}/>
-                    <CarouselItem img={login} alt='imagem 3' classNa={styles.img}/>
-                    <CarouselItem img={homeLogged} alt='imagem 4' classNa={styles.img}/>
-                    <CarouselItem img={del} alt='imagem 5' classNa={styles.img}/>
-                    <CarouselItem img={carrinho} alt='imagem 5' classNa={styles.img}/>
+                    <CarouselItem img={login} alt='imagem 2' classNa={styles.img}/>
+                    <CarouselItem img={challenge} alt='imagem 3' classNa={styles.img}/>
+                    <CarouselItem img={nextLevel} alt='imagem 4' classNa={styles.img}/>
                 </Carousel>   
             </main>
         </div>
