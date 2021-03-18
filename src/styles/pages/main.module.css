@@ -98,7 +98,22 @@
     justify-content: center;
     width: 90%;
     margin: auto;
-    text-align: left;
+    text-align: center;
+}
+
+.course{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.institution{
+    width: 100%;
+    padding: 1rem;
 }
 
 .data{
@@ -108,11 +123,17 @@
 
 .listItem{
     font-size: 1.2rem;
-    display: flex;
+    display: flex;  
+    text-align: center;
+}
+
+.listTitle{
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 .dataInside{
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-left: 1rem;
     display: flex;
 }
@@ -205,7 +226,7 @@
     .subtitle{
         font-size: 1rem
     }
-    .data,.dataInisde,.listItem{
+    .data,.dataInside,.listItem,.listTitle{
         font-size: .8rem;
     }
 }
