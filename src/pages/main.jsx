@@ -13,7 +13,7 @@ import smartStyle from '../img/smartStyle/smartStyle.png'
 import cronometro from '../img/cronometro.png'
 import tarefas from '../img/tarefas.png'
 import moveIt from '../img/moveIt/move-it.png'
-import bazzaar from '../img/bazzaar.png'
+import bazzaar from '../img/bazzaar/bazzaar.png'
 
 const responsive = {
     superLargeDesktop: {

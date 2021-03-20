@@ -8,6 +8,7 @@ import {Proffy} from './pages/Proffy'
 import {Happy} from './pages/Happy'
 import {SmartStyle} from './pages/SmartStyle'
 import { MoveIt } from './pages/MoveIt';
+import { Bazzaar } from './pages/Bazzaar';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -19,6 +20,7 @@ ReactDOM.render(
       <Route path='/happy' component={Happy}/>
       <Route path='/smartStyle' component={SmartStyle}/>
       <Route path='/moveIt' component={MoveIt}/>
+      <Route path='/bazzaar' component={Bazzaar}/>
     </Switch>
   </BrowserRouter>,
   document.getElementById('root')
