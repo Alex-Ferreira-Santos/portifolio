@@ -10,6 +10,7 @@ import {SmartStyle} from './pages/SmartStyle'
 import { MoveIt } from './pages/MoveIt';
 import { Bazzaar } from './pages/Bazzaar';
 import { Cronometro } from './pages/Cronometro';
+import { Tarefas } from './pages/Tarefas';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -23,6 +24,7 @@ ReactDOM.render(
       <Route path='/moveIt' component={MoveIt}/>
       <Route path='/bazzaar' component={Bazzaar}/>
       <Route path='/cronometro' component={Cronometro}/>
+      <Route path='/tarefas' component={Tarefas}/>
     </Switch>
   </BrowserRouter>,
   document.getElementById('root')
