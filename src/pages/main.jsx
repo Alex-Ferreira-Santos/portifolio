@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import styles from '../styles/pages/main.module.css'
 import Stack from '../components/stack'
 import Carousel from 'react-multi-carousel';
@@ -39,6 +39,11 @@ const responsive = {
 };
 
 function Main(){
+    const [showCertificates,setShowCertificates] = useState(false)
+
+    useEffect(()=>{
+
+    },[])
     return(
         <div className={styles.main}>
         <main className={styles.container}>
@@ -48,13 +53,13 @@ function Main(){
                 <h1 className={styles.name}>Alex Ferreira Santos</h1>
                 <h2 className={styles.contact}>Contato</h2>
                 <p className={styles.midia}>Email: alexfstos2@gmail.com</p>
-                <p className={styles.midia}>Github: <a href="https://github.com/Alex-Ferreira-Santos" className={styles.link}>Alex-Ferreira-Santos</a></p>
-                <p className={styles.midia}>LinkedIn: <a href="https://www.linkedin.com/in/alex-ferreira-santos-/" className={styles.link}>alex-ferreira-santos-</a></p>
+                <p className={styles.midia}>Github: <a href="https://github.com/Alex-Ferreira-Santos" target='_blank' rel='noopener noreferrer' className={styles.link}>Alex-Ferreira-Santos</a></p>
+                <p className={styles.midia}>LinkedIn: <a href="https://www.linkedin.com/in/alex-ferreira-santos-/" target='_blank' rel='noopener noreferrer' className={styles.link}>alex-ferreira-santos-</a></p>
             </div>
             </div>
             <section className={styles.section}>
             <h1 className={styles.sobre}>Sobre</h1>
-            <p className={styles.text}>Olá, me chamo Alex e desde cedo eu sempre gostei de técnologia, sempre tentava montar um robô nas minhas brincadeiras de infância, aos meus 14 anos eu fui descobrir o que era programação quando pesquisei no youtube “Aprender programação”, a primeira coisa que o youtube mostrou foi uma playlist de python do <a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" className={styles.link}>Curso em Video</a>, no qual eu sou grato dado o inicio por este mundo, a partir dai eu começei a estudar as linguagens básicas da web para ver como se fazia um site. Quando terminei a escola fui ir em busca do que fazer a partir dai, e então decidi entrar no curso de técnico de informatica para a internet do senac para poder trabalhar com técnologia, lá eu estou aprendendo diversas funcionalidades das linguagens e com isso já fiz alguns projetos, tanto para o curso tanto pessoal, você pode acompanhar meus conhecimentos e projetos com o resto da página, espero que goste.</p>
+            <p className={styles.text}>Olá, me chamo Alex e desde cedo eu sempre gostei de técnologia, sempre tentava montar um robô nas minhas brincadeiras de infância, aos meus 14 anos eu fui descobrir o que era programação quando pesquisei no youtube “Aprender programação”, a primeira coisa que o youtube mostrou foi uma playlist de python do <a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target='_blank' rel='noopener noreferrer' className={styles.link}>Curso em Video</a>, no qual eu sou grato dado o inicio por este mundo, a partir dai eu começei a estudar as linguagens básicas da web para ver como se fazia um site. Quando terminei a escola fui ir em busca do que fazer a partir dai, e então decidi entrar no curso de técnico de informatica para a internet do senac para poder trabalhar com técnologia, lá eu estou aprendendo diversas funcionalidades das linguagens e com isso já fiz alguns projetos, tanto para o curso tanto pessoal, você pode acompanhar meus conhecimentos e projetos com o resto da página, espero que goste.</p>
             </section>
             <section className={styles.section}>
             <h1 className={styles.title}>Técnologias Dominadas</h1>
@@ -73,7 +78,7 @@ function Main(){
                 <h2 className={styles.subtitle}>Cursos</h2>
                 <div className={styles.course}>
                     <div className={styles.institution}>
-                        <h3 className={styles.listTitle}>Curso em video</h3>
+                        <h3 className={styles.listTitle}><a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target='_blank' rel='noopener noreferrer' className={styles.link}>Curso em video</a></h3>
                         <p className={styles.dataInside}>Curso de Python3 básico</p>
                         <p className={styles.dataInside}>Curso de PHP para iniciantes</p>
                         <p className={styles.dataInside}>Curso de POO PHP</p>   
@@ -84,23 +89,23 @@ function Main(){
                         <p className={styles.dataInside}>Curso de Git e GitHub</p> 
                     </div> 
                     <div className={styles.institution}>
-                        <h3 className={styles.listTitle}>Fundação Bradesco</h3> 
-                        <p className={styles.dataInside}>HTML, CSS na prática</p> 
-                        <p className={styles.dataInside}>Inovando com CSS</p> 
-                        <p className={styles.dataInside}>Introdução ao Javascript</p> 
-                        <p className={styles.dataInside}>Linguagem de programação C# básico e avançado</p> 
-                        <p className={styles.dataInside}>Linguagem de programação Java básico</p> 
-                        <p className={styles.dataInside}>Microsoft Word 2016 básico, intermediario e avançado</p> 
-                        <p className={styles.dataInside}>Microsoft Excel 2016 básico, intermediario e avançado</p> 
+                        <h3 className={styles.listTitle}><a href="https://www.ev.org.br/#cursos" target='_blank' rel='noopener noreferrer' className={styles.link}>Fundação Bradesco</a></h3> 
+                        <p className={styles.dataInside}>HTML, CSS na prática - <button>Certificado</button></p> 
+                        <p className={styles.dataInside}>Inovando com CSS - <button>Certificado</button></p> 
+                        <p className={styles.dataInside}>Introdução ao Javascript - <button>Certificado</button></p> 
+                        <p className={styles.dataInside}>Linguagem de programação C# básico e avançado - <button>Certificado</button></p> 
+                        <p className={styles.dataInside}>Linguagem de programação Java básico - <button>Certificado</button></p> 
+                        <p className={styles.dataInside}>Microsoft Word 2016 básico, intermediario e avançado - <button>Certificado</button></p> 
+                        <p className={styles.dataInside}>Microsoft Excel 2016 básico, intermediario e avançado - <button>Certificado</button></p> 
                         
                     </div>                 
                     <div className={styles.institution}>
-                        <h3 className={styles.listTitle}>LinkedIn Learning</h3>
-                        <p className={styles.dataInside}>HTML Essencial Learning</p> 
-                        <p className={styles.dataInside}>Learning Python</p> 
+                        <h3 className={styles.listTitle}><a href="https://www.linkedin.com/learning/me" target='_blank' rel='noopener noreferrer' className={styles.link}>LinkedIn Learning</a></h3>
+                        <p className={styles.dataInside}>HTML Essencial Learning - <button>Certificado</button></p> 
+                        <p className={styles.dataInside}>Learning Python - <button>Certificado</button></p> 
                     </div>
                     <div className={styles.institution}>
-                        <h3 className={styles.listTitle}>Rocketseat</h3>
+                        <h3 className={styles.listTitle}><a href="https://rocketseat.com.br/" target='_blank' rel='noopener noreferrer' className={styles.link}>Rocketseat</a></h3>
                         <p className={styles.dataInside}>Curso de Javascript</p>
                         <p className={styles.dataInside}>Curso de ES6</p>
                         <p className={styles.dataInside}>Curso de Node.js</p>
