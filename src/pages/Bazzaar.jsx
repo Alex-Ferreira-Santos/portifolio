@@ -45,7 +45,6 @@ export function Bazzaar(){
                     </div>
                     <div className={styles.detail}>
                         <h1 className={styles.title}>Bazzaar</h1>
-                        <h3 className={styles.h3}>Uma plataforma para controle trabalho</h3>
                         <p>Bazzaar foi um exercicio do curso que o objetivo era adaptar um site da web para mobile</p>
                         <p className={styles.space}>O projeto foi feito em react-native com react-navigation</p>
                         <h3 className={styles.h3}>As funcionalidades do app:</h3>

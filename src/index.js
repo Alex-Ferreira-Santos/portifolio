@@ -9,6 +9,7 @@ import {Happy} from './pages/Happy'
 import {SmartStyle} from './pages/SmartStyle'
 import { MoveIt } from './pages/MoveIt';
 import { Bazzaar } from './pages/Bazzaar';
+import { Cronometro } from './pages/Cronometro';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -21,6 +22,7 @@ ReactDOM.render(
       <Route path='/smartStyle' component={SmartStyle}/>
       <Route path='/moveIt' component={MoveIt}/>
       <Route path='/bazzaar' component={Bazzaar}/>
+      <Route path='/cronometro' component={Cronometro}/>
     </Switch>
   </BrowserRouter>,
   document.getElementById('root')

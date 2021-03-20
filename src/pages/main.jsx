@@ -10,8 +10,8 @@ import logo from '../img/artes/logo.png'
 import proffy from '../img/proffy/proffy.png'
 import happy from '../img/happy/happy.png'
 import smartStyle from '../img/smartStyle/smartStyle.png'
-import cronometro from '../img/cronometro.png'
-import tarefas from '../img/tarefas.png'
+import cronometro from '../img/cronometro/cronometro.png'
+import tarefas from '../img/tarefas/tarefas.png'
 import moveIt from '../img/moveIt/move-it.png'
 import bazzaar from '../img/bazzaar/bazzaar.png'
 
@@ -77,7 +77,7 @@ function Main(){
                         <p className={styles.dataInside}>Curso de Python3 básico</p>
                         <p className={styles.dataInside}>Curso de PHP para iniciantes</p>
                         <p className={styles.dataInside}>Curso de POO PHP</p>   
-                        <p className={styles.dataInside}>Curso de HTMl5</p> 
+                        <p className={styles.dataInside}>Curso de HTML5</p> 
                         <p className={styles.dataInside}>Curso de Javascript</p> 
                         <p className={styles.dataInside}>Curso de Word 2016</p> 
                         <p className={styles.dataInside}>Curso de Excel 2016</p> 
@@ -85,7 +85,7 @@ function Main(){
                     </div> 
                     <div className={styles.institution}>
                         <h3 className={styles.listTitle}>Fundação Bradesco</h3> 
-                        <p className={styles.dataInside}>HTLM, CSS na prática</p> 
+                        <p className={styles.dataInside}>HTML, CSS na prática</p> 
                         <p className={styles.dataInside}>Inovando com CSS</p> 
                         <p className={styles.dataInside}>Introdução ao Javascript</p> 
                         <p className={styles.dataInside}>Linguagem de programação C# básico e avançado</p> 
@@ -96,7 +96,7 @@ function Main(){
                     </div>                 
                     <div className={styles.institution}>
                         <h3 className={styles.listTitle}>LinkedIn Learning</h3>
-                        <p className={styles.dataInside}>HTLM Essencial Learning</p> 
+                        <p className={styles.dataInside}>HTML Essencial Learning</p> 
                         <p className={styles.dataInside}>Learning Python</p> 
                     </div>
                     <div className={styles.institution}>
