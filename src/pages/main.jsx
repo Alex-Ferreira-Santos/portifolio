@@ -86,18 +86,17 @@ function Main(){
                     <div className={styles.institution}>
                         <h3 className={styles.listTitle}><a href="https://www.ev.org.br/#cursos" target='_blank' rel='noopener noreferrer' className={styles.link}>Fundação Bradesco</a></h3> 
                         <p className={styles.dataInside}>HTML, CSS na prática</p>
-                        <p className={styles.dataInside}>Inovando com CSS - <button>Certificado</button></p> 
-                        <p className={styles.dataInside}>Introdução ao Javascript - <button>Certificado</button></p> 
-                        <p className={styles.dataInside}>Linguagem de programação C# básico e avançado - <button>Certificado</button></p> 
-                        <p className={styles.dataInside}>Linguagem de programação Java básico - <button>Certificado</button></p> 
-                        <p className={styles.dataInside}>Microsoft Word 2016 básico, intermediario e avançado - <button>Certificado</button></p> 
-                        <p className={styles.dataInside}>Microsoft Excel 2016 básico, intermediario e avançado - <button>Certificado</button></p> 
-                        
+                        <p className={styles.dataInside}>Inovando com CSS</p> 
+                        <p className={styles.dataInside}>Introdução ao Javascript</p> 
+                        <p className={styles.dataInside}>Linguagem de programação C# básico e avançado</p> 
+                        <p className={styles.dataInside}>Linguagem de programação Java básico</p> 
+                        <p className={styles.dataInside}>Microsoft Word 2016 básico, intermediario e avançado</p> 
+                        <p className={styles.dataInside}>Microsoft Excel 2016 básico, intermediario e avançado</p> 
                     </div>                 
                     <div className={styles.institution}>
                         <h3 className={styles.listTitle}><a href="https://www.linkedin.com/learning/me" target='_blank' rel='noopener noreferrer' className={styles.link}>LinkedIn Learning</a></h3>
-                        <p className={styles.dataInside}>HTML Essencial Learning - <button>Certificado</button></p> 
-                        <p className={styles.dataInside}>Learning Python - <button>Certificado</button></p> 
+                        <p className={styles.dataInside}>HTML Essencial Learning</p> 
+                        <p className={styles.dataInside}>Learning Python</p> 
                     </div>
                     <div className={styles.institution}>
                         <h3 className={styles.listTitle}><a href="https://rocketseat.com.br/" target='_blank' rel='noopener noreferrer' className={styles.link}>Rocketseat</a></h3>

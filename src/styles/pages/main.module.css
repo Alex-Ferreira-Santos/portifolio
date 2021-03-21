@@ -107,7 +107,7 @@
     align-items:center;
     justify-content: space-around;
     margin: auto;
-    text-align: center;
+    text-align: left;
     width: 50%;
 }
 
@@ -124,7 +124,7 @@
 .listItem{
     font-size: 1.2rem;
     display: flex;  
-    text-align: center;
+    text-align: left;
 }
 
 .listTitle{
@@ -189,6 +189,12 @@
     .left{
         margin-left: .5rem;
     }
+    .course{
+        width: auto;
+    }
+    .dataInside{
+        margin: auto
+    }
     
 }
 @media(max-width:425px){
@@ -229,6 +235,12 @@
     }
     .data,.dataInside,.listItem,.listTitle{
         font-size: .8rem;
+    }
+    .dataInside{
+        font-size: .8rem;
+    }
+    .listTitle{
+        font-size: 1rem;
     }
 }
 
