@@ -124,193 +124,6 @@ pokemon?offset=0&limit=15')
             )}
 
             <div className={styles.row}>
-                    <div className={`${styles.containerLanguage} ${styles.csharp}`} onClick={()=>{
-                        setShowCode(true)
-                        setCode('csharp')
-                        }}>
-                        <div className={styles.center}>
-                            <img src={csharp} alt="c#" className={styles.image}/>
-                            <p className={`${styles.lgn}`}>C#</p>
-                        </div> 
-                    </div>
-                    
-                    <div className={`${styles.containerLanguage} ${styles.sql}`} onClick={()=>{
-                        setShowCode(true)
-                        setCode('sql')
-                    }}>
-                        <div className={styles.center}>
-                            <img src={sql} alt="sql" className={styles.image}/>
-                            <p className={styles.lgn}>SQL</p>
-                        </div>
-                    </div>
-
-                    <div className={`${styles.containerLanguage} ${styles.php}`} onClick={()=>{
-                        setShowCode(true)
-                        setCode('php')
-                    }}>
-                        <div className={styles.center}>
-                            <img src={php} alt="php" className={styles.image}/>
-                            <p className={styles.lgn}>Sintaxe PHP</p>
-                        </div>
-                    </div>
-            </div>
-
-            {showCode && (                   
-                <div className={styles.code}>
-                    {code === 'csharp' && (
-                       <div className={styles.languageCode}>
-                        <h1 className={styles.languageName}>C#</h1>
-                        <pre className={styles.coding}>
-                            {`
-using System;
-namespace Exemplo{
-  class Program{
-    static void Main(string[] args){
-      do{
-      Console.WriteLine('Qual seu nome?');
-      string name = Console.ReadLine();
-      Console.WriteLine('Quantos anos você tem?');
-      int age = int.Parse(Console.ReadLine());
-      Pessoa per = new Pessoa(name,age);
-      List<Pessoa> list = new List<Pessoa>();
-      list.Add(person);
-      Console.WriteLine('Cadastrar mais alguem?')
-      string answer = Console.ReadLine();
-      }while(answer!='n');
-      Console.WriteLine('Lista de pessoas:');
-      foreach( person in list){
-        Console.WriteLine(per.name+'|'+per.age)
-      }
-    }
-  }
-}`}    
-                        </pre>
-                        </div> 
-                    )}
-                    {code === 'sql' && (
-                        <div className={styles.languageCode}>
-                            <h1 className={styles.languageName}>SQL</h1>
-                            <pre className={styles.coding}>
-                        {`#MySql
-CREATE DATABASE Exemplo
-
-CREATE TABLE IF NOT EXISTS person(
-    idExemplo INTEGER PRIMARY KEY AUTOINCREMENT,
-    name VARCHAR(255) NOT NULL,
-    age INT(11) NOT NULL,
-)
-
-INSERT INTO person(name,age) VALUES('Alex',18)
-
-SELECT * FROM person WHERE idExemplo = 1
-
-UPDATE person SET name='Alex F' WHERE idExemplo=1
-
-DELETE FROM person WHERE idExemplo = 1
-
-                        `}
-                            </pre>
-                        </div> 
-                    )}
-                    {code === 'php' && (
-                        <div className={styles.languageCode}>
-                        <h1 className={styles.languageName}>PHP</h1>
-                        <pre className={styles.coding}>
-                        {`<?php?>
-require_once 'Exemplo.php';
-
-class Person extends Exemplo{
-    public function _construct($name,$age){
-        $this->name = $name;
-        $this->age = $age;
-    }
-    public $name;
-    private $age;
-
-    public function getName(){
-        return $this->name;
-    }
-
-    public function setName($name){
-        $this->name = $name;
-    }
-}   
-$name = isset($_GET['name']);
-$age = isset($_GET['age']);
-
-$per[0] = new Person($name, $age);
-$per[1] = new Person('Alex',18);
-
-print_r($per);
-                        
-`}
-                        
-                        </pre>
-                        </div> 
-                    )}
-                    
-                </div>                        
-            )}
-            <div className={styles.row}>
-                    <div className={`${styles.containerLanguage} ${styles.python}`} onClick={()=>{
-                        setShowCode(true)
-                        setCode('python')
-                        }}>
-                        <div className={styles.center}>
-                            <img src={python} alt="python" className={styles.image}/>
-                            <p className={styles.lgn}>Python básico</p>
-                        </div> 
-                    </div>
-            </div>
-            {showCode && (                   
-                <div className={styles.code}>
-                    {code === 'python' && (
-                       <div className={styles.languageCode}>
-                        <h1 className={styles.languageName}>Python</h1>
-                        <pre className={styles.coding}>
-                            {`import random
-
-class Dados:
-    def play(self):
-        self.number = random.Randint(1,7)  
-        return number
-    
-    pass
-
-name = str(input('Qual seu nome?'))
-print(f'bem vindo ao jogo {name}').strip()
-goal = 100
-while(option != 'STOP' or goal < 0):
-    print('Escolha o que quer fazer')
-    print('Para jogar os dados digite "D"')
-    print('Para sair do jogo digite "STOP"')
-    option = str(input('O que deseja fazer?: '))
-    option = option.strip().upper()
-    if(option == 'D'):
-        dados = Dados()
-        number = dados.play()
-        print(f'O número tirado foi {number}')
-        goal-=number
-        print(f'Falta {goal} casas para acabar')
-    elfi(option == 'STOP'):
-        print('encerrando o jogo...')
-        break
-    else:
-        print('digite uma opção valida')
-
-print('Jogo encerrado!')
-if(goal < 0):
-    print('Parabêns você chegou até o final!!!')
-                            `}    
-                        </pre>
-                        </div> 
-                    )}          
-                </div>                        
-            )}
-
-            <h2 className={styles.subtitle}>Bibliotecas e Frameworks</h2>
-            
-            <div className={styles.row}>
                     <div className={`${styles.containerLanguage} ${styles.react}`} onClick={()=>{
                         setShowCode(true)
                         setCode('react')
@@ -331,13 +144,13 @@ if(goal < 0):
                         </div>
                     </div>
 
-                    <div className={`${styles.containerLanguage} ${styles.asp}`} onClick={()=>{
+                    <div className={`${styles.containerLanguage} ${styles.sql}`} onClick={()=>{
                         setShowCode(true)
-                        setCode('asp')
+                        setCode('sql')
                     }}>
                         <div className={styles.center}>
-                            <img src={asp} alt="asp.netcore mvc" className={styles.image}/>
-                            <p className={styles.lgn}>asp.netcore mvc</p>
+                            <img src={sql} alt="sql" className={styles.image}/>
+                            <p className={styles.lgn}>SQL</p>
                         </div>
                     </div>
             </div>
@@ -425,7 +238,72 @@ export default Main
 `}    
                         </pre>
                         </div> 
-                    )} 
+                    )}
+                    {code === 'sql' && (
+                        <div className={styles.languageCode}>
+                            <h1 className={styles.languageName}>SQL</h1>
+                            <pre className={styles.coding}>
+                        {`#MySql
+CREATE DATABASE Exemplo
+
+CREATE TABLE IF NOT EXISTS person(
+    idExemplo INTEGER PRIMARY KEY AUTOINCREMENT,
+    name VARCHAR(255) NOT NULL,
+    age INT(11) NOT NULL,
+)
+
+INSERT INTO person(name,age) VALUES('Alex',18)
+
+SELECT * FROM person WHERE idExemplo = 1
+
+UPDATE person SET name='Alex F' WHERE idExemplo=1
+
+DELETE FROM person WHERE idExemplo = 1
+
+                        `}
+                            </pre>
+                        </div> 
+                    )}          
+                </div>                        
+            )}
+
+
+            <h2 className={styles.subtitle}>Outras Tecnologias</h2>
+            
+            <div className={styles.row}>
+                    <div className={`${styles.containerLanguage} ${styles.asp}`} onClick={()=>{
+                        setShowCode(true)
+                        setCode('asp')
+                    }}>
+
+                    <div className={styles.center}>
+                            <img src={asp} alt="asp.netcore mvc" className={styles.image}/>
+                            <p className={styles.lgn}>asp.netcore mvc</p>
+                        </div>
+                    </div>
+                    <div className={`${styles.containerLanguage} ${styles.csharp}`} onClick={()=>{
+                        setShowCode(true)
+                        setCode('csharp')
+                        }}>
+                        <div className={styles.center}>
+                            <img src={csharp} alt="c#" className={styles.image}/>
+                            <p className={`${styles.lgn}`}>C#</p>
+                        </div> 
+                    </div>
+
+                    <div className={`${styles.containerLanguage} ${styles.php}`} onClick={()=>{
+                        setShowCode(true)
+                        setCode('php')
+                    }}>
+                        <div className={styles.center}>
+                            <img src={php} alt="php" className={styles.image}/>
+                            <p className={styles.lgn}>Sintaxe PHP</p>
+                        </div>
+                    </div>
+            </div>
+
+            {showCode && (                   
+                <div className={styles.code}>       
                     {code === 'asp' && (
                        <div className={styles.languageCode}>
                         <h1 className={styles.languageName}>Aps.netcore mvc - C#</h1>
@@ -457,9 +335,76 @@ export default Main
                         `}    
                         </pre>
                         </div> 
-                    )}         
+                    )}
+                    {code === 'csharp' && (
+                       <div className={styles.languageCode}>
+                        <h1 className={styles.languageName}>C#</h1>
+                        <pre className={styles.coding}>
+                            {`
+using System;
+namespace Exemplo{
+  class Program{
+    static void Main(string[] args){
+      do{
+      Console.WriteLine('Qual seu nome?');
+      string name = Console.ReadLine();
+      Console.WriteLine('Quantos anos você tem?');
+      int age = int.Parse(Console.ReadLine());
+      Pessoa per = new Pessoa(name,age);
+      List<Pessoa> list = new List<Pessoa>();
+      list.Add(person);
+      Console.WriteLine('Cadastrar mais alguem?')
+      string answer = Console.ReadLine();
+      }while(answer!='n');
+      Console.WriteLine('Lista de pessoas:');
+      foreach( person in list){
+        Console.WriteLine(per.name+'|'+per.age)
+      }
+    }
+  }
+}`}    
+                        </pre>
+                        </div> 
+                    )} 
+                    {code === 'php' && (
+                        <div className={styles.languageCode}>
+                        <h1 className={styles.languageName}>PHP</h1>
+                        <pre className={styles.coding}>
+                        {`<?php?>
+require_once 'Exemplo.php';
+
+class Person extends Exemplo{
+    public function _construct($name,$age){
+        $this->name = $name;
+        $this->age = $age;
+    }
+    public $name;
+    private $age;
+
+    public function getName(){
+        return $this->name;
+    }
+
+    public function setName($name){
+        $this->name = $name;
+    }
+}   
+$name = isset($_GET['name']);
+$age = isset($_GET['age']);
+
+$per[0] = new Person($name, $age);
+$per[1] = new Person('Alex',18);
+
+print_r($per);
+                        
+`}
+                        
+                        </pre>
+                        </div> 
+                    )}        
                 </div>                        
             )}
+
             <div className={styles.row}>
                     <div className={`${styles.containerLanguage} ${styles.bootstrap}`} onClick={()=>{
                         setShowCode(true)
@@ -476,13 +421,23 @@ export default Main
                         setCode('jquery')
                     }}>
                         <div className={styles.center}>
-                            <img src={jquery} alt="jquey" className={styles.image}/>
+                            <img src={jquery} alt="jquery" className={styles.image}/>
                             <p className={styles.lgn}>Jquery</p>
                         </div>
                     </div>
+                    <div className={`${styles.containerLanguage} ${styles.python}`} onClick={()=>{
+                        setShowCode(true)
+                        setCode('python')
+                        }}>
+                        <div className={styles.center}>
+                            <img src={python} alt="python" className={styles.image}/>
+                            <p className={styles.lgn}>Python básico</p>
+                        </div> 
+                    </div>
             </div>
-            <div className={styles.code}>
-                {code === 'bootstrap' && (
+            {showCode && (                   
+                <div className={styles.code}>
+                    {code === 'bootstrap' && (
                        <div className={styles.languageCode}>
                         <h1 className={styles.languageName}>Bootstrap - HTML</h1>
                         <pre className={styles.coding}>
@@ -533,8 +488,50 @@ $('#coletar').on('click',()=>{
 `}    
                         </pre>
                         </div> 
-                    )}    
-            </div>
+                    )}
+                    {code === 'python' && (
+                       <div className={styles.languageCode}>
+                        <h1 className={styles.languageName}>Python</h1>
+                        <pre className={styles.coding}>
+                            {`import random
+
+class Dados:
+    def play(self):
+        self.number = random.Randint(1,7)  
+        return number
+    
+    pass
+
+name = str(input('Qual seu nome?'))
+print(f'bem vindo ao jogo {name}').strip()
+goal = 100
+while(option != 'STOP' or goal < 0):
+    print('Escolha o que quer fazer')
+    print('Para jogar os dados digite "D"')
+    print('Para sair do jogo digite "STOP"')
+    option = str(input('O que deseja fazer?: '))
+    option = option.strip().upper()
+    if(option == 'D'):
+        dados = Dados()
+        number = dados.play()
+        print(f'O número tirado foi {number}')
+        goal-=number
+        print(f'Falta {goal} casas para acabar')
+    elfi(option == 'STOP'):
+        print('encerrando o jogo...')
+        break
+    else:
+        print('digite uma opção valida')
+
+print('Jogo encerrado!')
+if(goal < 0):
+    print('Parabêns você chegou até o final!!!')
+                            `}    
+                        </pre>
+                        </div> 
+                    )}          
+                </div>                        
+            )}
         </div>
     )
 }
