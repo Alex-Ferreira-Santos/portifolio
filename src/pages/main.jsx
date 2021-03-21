@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React from 'react';
 import styles from '../styles/pages/main.module.css'
 import Stack from '../components/stack'
 import Carousel from 'react-multi-carousel';
@@ -14,7 +14,6 @@ import cronometro from '../img/cronometro/cronometro.png'
 import tarefas from '../img/tarefas/tarefas.png'
 import moveIt from '../img/moveIt/move-it.png'
 import bazzaar from '../img/bazzaar/bazzaar.png'
-import { Certificate } from '../components/Certificate';
 
 const responsive = {
     superLargeDesktop: {
@@ -40,8 +39,6 @@ const responsive = {
 };
 
 function Main(){
-    const [showCertificates,setShowCertificates] = useState(false)
-
     return(
         <div className={styles.main}>
         <main className={styles.container}>
@@ -88,10 +85,7 @@ function Main(){
                     </div> 
                     <div className={styles.institution}>
                         <h3 className={styles.listTitle}><a href="https://www.ev.org.br/#cursos" target='_blank' rel='noopener noreferrer' className={styles.link}>Fundação Bradesco</a></h3> 
-                        <p className={styles.dataInside}>HTML, CSS na prática - <button onClick={()=> {
-                            setShowCertificates(true)
-                        }}>Certificado</button></p>
-                        {showCertificates && (<Certificate img={happy} nome='happy'/>)} 
+                        <p className={styles.dataInside}>HTML, CSS na prática</p>
                         <p className={styles.dataInside}>Inovando com CSS - <button>Certificado</button></p> 
                         <p className={styles.dataInside}>Introdução ao Javascript - <button>Certificado</button></p> 
                         <p className={styles.dataInside}>Linguagem de programação C# básico e avançado - <button>Certificado</button></p> 
