@@ -12,6 +12,7 @@ import asp from '../img/asp.png'
 import bootstrap from '../img/bootstrap.png'
 import jquery from '../img/jquery.png'
 import styles from '../styles/components/stack.module.css'
+import { Language } from './Language';
 
 export default function Stack(props){
     const [showCode,setShowCode] = useState(false)
@@ -39,41 +40,11 @@ export default function Stack(props){
     return(
         <div>
         <div className={styles.row}>
-                    <div className={`${styles.containerLanguage} ${styles.html} ${delay} ${showLanguage}`} onClick={()=>{
-                        setShowCode(true)
-                        setCode('html')
-                        }} onMouseOver={()=>{
-                            setDelay('')
-                        }}>
-                        <div className={styles.center}>
-                            <img src={html} alt="html" className={styles.image}/>
-                            <p className={styles.lgn}>HTML</p>
-                        </div> 
-                    </div>
+                    <Language delay={delay} img={html} name="HTML" show={showLanguage} set1={setShowCode} set2={setCode} set3={setDelay} tech='html' css={styles.html}/>
                     
-                    <div className={`${styles.containerLanguage} ${styles.css} ${delay1} ${showLanguage}`} onClick={()=>{
-                        setShowCode(true)
-                        setCode('css')
-                    }} onMouseOver={()=>{
-                        setDelay1('')
-                    }}>
-                        <div className={styles.center}>
-                            <img src={css} alt="css" className={styles.image}/>
-                            <p className={styles.lgn}>CSS</p>
-                        </div>
-                    </div>
+                    <Language delay={delay1} img={css} name="CSS" show={showLanguage} set1={setShowCode} set2={setCode} set3={setDelay1} tech='css' css={styles.css}/>
 
-                    <div className={`${styles.containerLanguage} ${styles.js} ${delay2} ${showLanguage}`} onClick={()=>{
-                        setShowCode(true)
-                        setCode('js')
-                    }} onMouseOver={()=>{
-                        setDelay2('')
-                    }}>
-                        <div className={styles.center}>
-                            <img src={js} alt="js" className={styles.image}/>
-                            <p className={styles.lgn}>Javascript</p>
-                        </div>
-                    </div>
+                    <Language delay={delay2} img={js} name="Javascript" show={showLanguage} set1={setShowCode} set2={setCode} set3={setDelay2} tech='js' css={styles.js}/>
             </div>
             
             {showCode && (                   
@@ -150,41 +121,12 @@ pokemon?offset=0&limit=15')
             )}
 
             <div className={styles.row}>
-                    <div className={`${styles.containerLanguage} ${styles.react} ${delay3} ${showLanguage}`} onClick={()=>{
-                        setShowCode(true)
-                        setCode('react')
-                        }} onMouseOver={()=>{
-                            setDelay3('')
-                        }}>
-                        <div className={styles.center}>
-                            <img src={react} alt="react" className={styles.image}/>
-                            <p className={styles.lgn}>React</p>
-                        </div> 
-                    </div>
-                    
-                    <div className={`${styles.containerLanguage} ${styles.native} ${delay4} ${showLanguage}`} onClick={()=>{
-                        setShowCode(true)
-                        setCode('react-native')
-                    }} onMouseOver={()=>{
-                        setDelay4('')
-                    }}>
-                        <div className={styles.center}>
-                            <img src={reactNative} alt="react-native" className={styles.image}/>
-                            <p className={styles.lgn}>React-native</p>
-                        </div>
-                    </div>
+                    <Language delay={delay3} img={react} name="React" show={showLanguage} set1={setShowCode} set2={setCode} set3={setDelay3} tech='react' css={styles.react}/>
 
-                    <div className={`${styles.containerLanguage} ${styles.sql} ${delay5} ${showLanguage}`} onClick={()=>{
-                        setShowCode(true)
-                        setCode('sql')
-                    }} onMouseOver={()=>{
-                        setDelay5('')
-                    }}>
-                        <div className={styles.center}>
-                            <img src={sql} alt="sql" className={styles.image}/>
-                            <p className={styles.lgn}>SQL</p>
-                        </div>
-                    </div>
+                    <Language delay={delay4} img={reactNative} name="React-native" show={showLanguage} set1={setShowCode} set2={setCode} set3={setDelay4} tech='react-native' css={styles.native}/>
+                    
+                    <Language delay={delay5} img={sql} name="SQL" show={showLanguage} set1={setShowCode} set2={setCode} set3={setDelay5} tech='sql' css={styles.sql}/>
+
             </div>
 
             {showCode && (                   
@@ -303,41 +245,11 @@ DELETE FROM person WHERE idExemplo = 1
             <h2 className={styles.subtitle}>Outras Tecnologias</h2>
             
             <div className={styles.row}>
-                    <div className={`${styles.containerLanguage} ${styles.asp} ${delay} ${showLanguage}`} onClick={()=>{
-                        setShowCode(true)
-                        setCode('asp')
-                    }} onMouseOver={()=>{
-                        setDelay('')
-                    }}>
+                    <Language delay={delay} img={asp} name="asp.netcore mvc" show={showLanguage} set1={setShowCode} set2={setCode} set3={setDelay} tech='asp' css={styles.asp}/>
 
-                    <div className={styles.center}>
-                            <img src={asp} alt="asp.netcore mvc" className={styles.image}/>
-                            <p className={styles.lgn}>asp.netcore mvc</p>
-                        </div>
-                    </div>
-                    <div className={`${styles.containerLanguage} ${styles.csharp} ${delay2} ${showLanguage}`} onClick={()=>{
-                        setShowCode(true)
-                        setCode('csharp')
-                        }} onMouseOver={()=>{
-                            setDelay1('')
-                        }}>
-                        <div className={styles.center}>
-                            <img src={csharp} alt="c#" className={styles.image}/>
-                            <p className={`${styles.lgn}`}>C#</p>
-                        </div> 
-                    </div>
+                    <Language delay={delay1} img={csharp} name="C#" show={showLanguage} set1={setShowCode} set2={setCode} set3={setDelay1} tech='csharp' css={styles.csharp}/>
 
-                    <div className={`${styles.containerLanguage} ${styles.php} ${delay3} ${showLanguage}`} onClick={()=>{
-                        setShowCode(true)
-                        setCode('php')
-                    }} onMouseOver={()=>{
-                        setDelay2('')
-                    }}>
-                        <div className={styles.center}>
-                            <img src={php} alt="php" className={styles.image}/>
-                            <p className={styles.lgn}>Sintaxe PHP</p>
-                        </div>
-                    </div>
+                    <Language delay={delay2} img={php} name="Sintaxe PHP" show={showLanguage} set1={setShowCode} set2={setCode} set3={setDelay2} tech='php' css={styles.php}/>
             </div>
 
             {showCode && (                   
@@ -444,40 +356,13 @@ print_r($per);
             )}
 
             <div className={styles.row}>
-                    <div className={`${styles.containerLanguage} ${styles.bootstrap} ${delay3} ${showLanguage}`} onClick={()=>{
-                        setShowCode(true)
-                        setCode('bootstrap')
-                        }} onMouseOver={()=>{
-                            setDelay3('')
-                        }}>
-                        <div className={styles.center}>
-                            <img src={bootstrap} alt="bootstrap" className={styles.image}/>
-                            <p className={`${styles.lgn}`}>Bootstrap</p>
-                        </div> 
-                    </div>
+                <Language delay={delay3} img={bootstrap} name="Bootstrap" show={showLanguage} set1={setShowCode} set2={setCode} set3={setDelay3} tech='bootstrap' css={styles.bootstrap}/>
+
+                <Language delay={delay4} img={jquery} name="Jquery" show={showLanguage} set1={setShowCode} set2={setCode} set3={setDelay4} tech='jquery' css={styles.jquery}/>
                     
-                    <div className={`${styles.containerLanguage} ${styles.jquery} ${delay4} ${showLanguage}`} onClick={()=>{
-                        setShowCode(true)
-                        setCode('jquery')
-                    }} onMouseOver={()=>{
-                        setDelay4('')
-                    }}>
-                        <div className={styles.center}>
-                            <img src={jquery} alt="jquery" className={styles.image}/>
-                            <p className={styles.lgn}>Jquery</p>
-                        </div>
-                    </div>
-                    <div className={`${styles.containerLanguage} ${styles.python} ${delay5} ${showLanguage}`} onClick={()=>{
-                        setShowCode(true)
-                        setCode('python')
-                        }} onMouseOver={()=>{
-                            setDelay5('')
-                        }}>
-                        <div className={styles.center}>
-                            <img src={python} alt="python" className={styles.image}/>
-                            <p className={styles.lgn}>Python básico</p>
-                        </div> 
-                    </div>
+                <Language delay={delay5} img={python} name="Python básico" show={showLanguage} set1={setShowCode} set2={setCode} set3={setDelay5} tech='python' css={styles.python}/>
+
+
             </div>
             {showCode && (                   
                 <div className={styles.code}>
