@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import html from '../img/html.png'
 import css from '../img/css.png'
 import js from '../img/js.png'
@@ -13,15 +13,37 @@ import bootstrap from '../img/bootstrap.png'
 import jquery from '../img/jquery.png'
 import styles from '../styles/components/stack.module.css'
 
-export default function Stack(){
+export default function Stack(props){
     const [showCode,setShowCode] = useState(false)
     const [code,setCode] = useState('')
+    const [showLanguage,setShowLanguage] = useState('')
+    const [delay,setDelay] = useState('')
+    const [delay1,setDelay1] = useState('')
+    const [delay2,setDelay2] = useState('')
+    const [delay3,setDelay3] = useState('')
+    const [delay4,setDelay4] = useState('')
+    const [delay5,setDelay5] = useState('')
+
+    useEffect(()=>{
+        if(props.height > 300){
+            setDelay(styles.delay)
+            setDelay1(styles.delay1)
+            setDelay2(styles.delay2)
+            setDelay3(styles.delay3)
+            setDelay4(styles.delay4)
+            setDelay5(styles.delay5)
+            setShowLanguage(styles.show) 
+        }
+    },[props.height])
+
     return(
         <div>
         <div className={styles.row}>
-                    <div className={`${styles.containerLanguage} ${styles.html}`} onClick={()=>{
+                    <div className={`${styles.containerLanguage} ${styles.html} ${delay} ${showLanguage}`} onClick={()=>{
                         setShowCode(true)
                         setCode('html')
+                        }} onMouseOver={()=>{
+                            setDelay('')
                         }}>
                         <div className={styles.center}>
                             <img src={html} alt="html" className={styles.image}/>
@@ -29,9 +51,11 @@ export default function Stack(){
                         </div> 
                     </div>
                     
-                    <div className={`${styles.containerLanguage} ${styles.css}`} onClick={()=>{
+                    <div className={`${styles.containerLanguage} ${styles.css} ${delay1} ${showLanguage}`} onClick={()=>{
                         setShowCode(true)
                         setCode('css')
+                    }} onMouseOver={()=>{
+                        setDelay1('')
                     }}>
                         <div className={styles.center}>
                             <img src={css} alt="css" className={styles.image}/>
@@ -39,9 +63,11 @@ export default function Stack(){
                         </div>
                     </div>
 
-                    <div className={`${styles.containerLanguage} ${styles.js}`} onClick={()=>{
+                    <div className={`${styles.containerLanguage} ${styles.js} ${delay2} ${showLanguage}`} onClick={()=>{
                         setShowCode(true)
                         setCode('js')
+                    }} onMouseOver={()=>{
+                        setDelay2('')
                     }}>
                         <div className={styles.center}>
                             <img src={js} alt="js" className={styles.image}/>
@@ -124,9 +150,11 @@ pokemon?offset=0&limit=15')
             )}
 
             <div className={styles.row}>
-                    <div className={`${styles.containerLanguage} ${styles.react}`} onClick={()=>{
+                    <div className={`${styles.containerLanguage} ${styles.react} ${delay3} ${showLanguage}`} onClick={()=>{
                         setShowCode(true)
                         setCode('react')
+                        }} onMouseOver={()=>{
+                            setDelay3('')
                         }}>
                         <div className={styles.center}>
                             <img src={react} alt="react" className={styles.image}/>
@@ -134,9 +162,11 @@ pokemon?offset=0&limit=15')
                         </div> 
                     </div>
                     
-                    <div className={`${styles.containerLanguage} ${styles.native}`} onClick={()=>{
+                    <div className={`${styles.containerLanguage} ${styles.native} ${delay4} ${showLanguage}`} onClick={()=>{
                         setShowCode(true)
                         setCode('react-native')
+                    }} onMouseOver={()=>{
+                        setDelay4('')
                     }}>
                         <div className={styles.center}>
                             <img src={reactNative} alt="react-native" className={styles.image}/>
@@ -144,9 +174,11 @@ pokemon?offset=0&limit=15')
                         </div>
                     </div>
 
-                    <div className={`${styles.containerLanguage} ${styles.sql}`} onClick={()=>{
+                    <div className={`${styles.containerLanguage} ${styles.sql} ${delay5} ${showLanguage}`} onClick={()=>{
                         setShowCode(true)
                         setCode('sql')
+                    }} onMouseOver={()=>{
+                        setDelay5('')
                     }}>
                         <div className={styles.center}>
                             <img src={sql} alt="sql" className={styles.image}/>
@@ -271,9 +303,11 @@ DELETE FROM person WHERE idExemplo = 1
             <h2 className={styles.subtitle}>Outras Tecnologias</h2>
             
             <div className={styles.row}>
-                    <div className={`${styles.containerLanguage} ${styles.asp}`} onClick={()=>{
+                    <div className={`${styles.containerLanguage} ${styles.asp} ${delay} ${showLanguage}`} onClick={()=>{
                         setShowCode(true)
                         setCode('asp')
+                    }} onMouseOver={()=>{
+                        setDelay('')
                     }}>
 
                     <div className={styles.center}>
@@ -281,9 +315,11 @@ DELETE FROM person WHERE idExemplo = 1
                             <p className={styles.lgn}>asp.netcore mvc</p>
                         </div>
                     </div>
-                    <div className={`${styles.containerLanguage} ${styles.csharp}`} onClick={()=>{
+                    <div className={`${styles.containerLanguage} ${styles.csharp} ${delay2} ${showLanguage}`} onClick={()=>{
                         setShowCode(true)
                         setCode('csharp')
+                        }} onMouseOver={()=>{
+                            setDelay1('')
                         }}>
                         <div className={styles.center}>
                             <img src={csharp} alt="c#" className={styles.image}/>
@@ -291,9 +327,11 @@ DELETE FROM person WHERE idExemplo = 1
                         </div> 
                     </div>
 
-                    <div className={`${styles.containerLanguage} ${styles.php}`} onClick={()=>{
+                    <div className={`${styles.containerLanguage} ${styles.php} ${delay3} ${showLanguage}`} onClick={()=>{
                         setShowCode(true)
                         setCode('php')
+                    }} onMouseOver={()=>{
+                        setDelay2('')
                     }}>
                         <div className={styles.center}>
                             <img src={php} alt="php" className={styles.image}/>
@@ -406,9 +444,11 @@ print_r($per);
             )}
 
             <div className={styles.row}>
-                    <div className={`${styles.containerLanguage} ${styles.bootstrap}`} onClick={()=>{
+                    <div className={`${styles.containerLanguage} ${styles.bootstrap} ${delay3} ${showLanguage}`} onClick={()=>{
                         setShowCode(true)
                         setCode('bootstrap')
+                        }} onMouseOver={()=>{
+                            setDelay3('')
                         }}>
                         <div className={styles.center}>
                             <img src={bootstrap} alt="bootstrap" className={styles.image}/>
@@ -416,18 +456,22 @@ print_r($per);
                         </div> 
                     </div>
                     
-                    <div className={`${styles.containerLanguage} ${styles.jquery}`} onClick={()=>{
+                    <div className={`${styles.containerLanguage} ${styles.jquery} ${delay4} ${showLanguage}`} onClick={()=>{
                         setShowCode(true)
                         setCode('jquery')
+                    }} onMouseOver={()=>{
+                        setDelay4('')
                     }}>
                         <div className={styles.center}>
                             <img src={jquery} alt="jquery" className={styles.image}/>
                             <p className={styles.lgn}>Jquery</p>
                         </div>
                     </div>
-                    <div className={`${styles.containerLanguage} ${styles.python}`} onClick={()=>{
+                    <div className={`${styles.containerLanguage} ${styles.python} ${delay5} ${showLanguage}`} onClick={()=>{
                         setShowCode(true)
                         setCode('python')
+                        }} onMouseOver={()=>{
+                            setDelay5('')
                         }}>
                         <div className={styles.center}>
                             <img src={python} alt="python" className={styles.image}/>

@@ -51,10 +51,10 @@ function Main(){
 
     function ShowScroll(){
         const height = document.documentElement.scrollTop
-        if(height > 500){
+        if(height > 300){
             setShowTec(styles.show)
         }
-        if(height > 800){
+        if(height > 1000){
             setShowEducation(styles.show)
         }
         if(window.innerWidth > 425){
@@ -66,11 +66,7 @@ function Main(){
                 setShowProject(styles.show)
             }
         }
-        
     }
-        
-    
-
     return(
         <div className={styles.main}>
         <main className={styles.container}>
@@ -91,7 +87,7 @@ function Main(){
             <section className={`${styles.section} ${showTec}`}>
             <h1 className={styles.title}>Técnologias Dominadas</h1>
             <h2 className={styles.subtitle}>Principal Stack</h2>
-                <Stack/>
+                <Stack height={document.documentElement.scrollTop}/>
             </section>
             <section className={`${styles.section} ${showEducation}`}>
                 <h1 className={styles.title}>Educação</h1>
