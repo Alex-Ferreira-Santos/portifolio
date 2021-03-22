@@ -3,8 +3,11 @@ import styles from '../styles/components/stack.module.css'
 export function Language(props){
     return (
         <div className={`${styles.containerLanguage} ${props.css} ${props.delay} ${props.show}`} onClick={()=>{
-            props.set1(true)
+            props.set1(false)
             props.set2(props.tech)
+            setTimeout(()=>{
+                props.set1(true)
+            })
             }} onMouseOver={()=>{
                 props.set3('')
             }}>

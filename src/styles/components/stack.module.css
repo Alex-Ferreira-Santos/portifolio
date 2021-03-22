@@ -138,6 +138,16 @@
     margin: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    animation: bigger .5s ease-in-out;
+}
+
+@keyframes bigger{
+    0%{
+        transform: scale(0)
+    }
+    100%{
+        transform: scale(1)
+    }
 }
 .languageName{
     display:flex;
