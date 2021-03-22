@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import styles from '../styles/pages/main.module.css'
 import Stack from '../components/stack'
 import Carousel from 'react-multi-carousel';
@@ -39,6 +39,38 @@ const responsive = {
 };
 
 function Main(){
+    const [show,setShow] = useState('')
+    const [showTec,setShowTec] = useState('')
+    const [showEducation,setShowEducation] = useState('')
+    const [showProject,setShowProject] = useState('')
+
+    useEffect(()=>{
+        setShow(styles.show)
+        window.onscroll = () => ShowScroll()
+    },[])
+
+    function ShowScroll(){
+        const height = document.documentElement.scrollTop
+        if(height > 500){
+            setShowTec(styles.show)
+        }
+        if(height > 800){
+            setShowEducation(styles.show)
+        }
+        if(window.innerWidth > 425){
+            if(height > 2100){
+                setShowProject(styles.show)
+            }
+        }else{
+            if(height > 1800){
+                setShowProject(styles.show)
+            }
+        }
+        
+    }
+        
+    
+
     return(
         <div className={styles.main}>
         <main className={styles.container}>
@@ -52,16 +84,16 @@ function Main(){
                 <p className={styles.midia}>LinkedIn: <a href="https://www.linkedin.com/in/alex-ferreira-santos-/" target='_blank' rel='noopener noreferrer' className={styles.link}>alex-ferreira-santos-</a></p>
             </div>
             </div>
-            <section className={styles.section}>
+            <section className={`${styles.section} ${show}`}>
             <h1 className={styles.sobre}>Sobre</h1>
             <p className={styles.text}>Olá, me chamo Alex e desde cedo eu sempre gostei de técnologia, sempre tentava montar um robô nas minhas brincadeiras de infância, aos meus 14 anos eu fui descobrir o que era programação quando pesquisei no youtube “Aprender programação”, a primeira coisa que o youtube mostrou foi uma playlist de python do <a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target='_blank' rel='noopener noreferrer' className={styles.link}>Curso em Video</a>, no qual eu sou grato dado o inicio por este mundo, a partir dai eu começei a estudar as linguagens básicas da web para ver como se fazia um site. Quando terminei a escola fui ir em busca do que fazer a partir dai, e então decidi entrar no curso de técnico de informatica para a internet do senac para poder trabalhar com técnologia, lá eu estou aprendendo diversas funcionalidades das linguagens e com isso já fiz alguns projetos, tanto para o curso tanto pessoal, você pode acompanhar meus conhecimentos e projetos com o resto da página, espero que goste.</p>
             </section>
-            <section className={styles.section}>
+            <section className={`${styles.section} ${showTec}`}>
             <h1 className={styles.title}>Técnologias Dominadas</h1>
             <h2 className={styles.subtitle}>Principal Stack</h2>
                 <Stack/>
             </section>
-            <section className={styles.section}>
+            <section className={`${styles.section} ${showEducation}`}>
                 <h1 className={styles.title}>Educação</h1>
                 <h2 className={styles.subtitle}>Formação</h2>
                 <div className={styles.school}>
@@ -116,7 +148,7 @@ function Main(){
                 </div>
                 
             </section>
-            <section className={styles.section}>
+            <section className={`${styles.section} ${showProject}`}>
                 <h1>Projetos</h1>
                 <div className={styles.carousel}>
                     <Carousel responsive={responsive}>
