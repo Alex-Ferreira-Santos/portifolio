@@ -206,7 +206,7 @@
 
 @media (max-width: 425px){
     .image{
-        width: 1.5rem;
+        width: 3rem;
     }
     .lgn{
         font-size: .8rem
@@ -220,5 +220,10 @@
     }
     .subtitle{
         font-size: 1rem
+    }
+}
+@media(max-width:339px){
+    .image{
+        width: 1.5rem;
     }
 }
