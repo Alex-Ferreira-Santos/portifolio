@@ -55,10 +55,11 @@ function Main(){
             setShowTec(styles.show)
         }
         if(window.innerWidth <= 425){
-            if(height > 1600){
+            if(height > 1400){
+                
                 setShowProject(styles.show)
             }
-            if(height > 800){
+            if(height > 700){
                 setShowEducation(styles.show)
             }
         }else{
