@@ -54,15 +54,15 @@ function Main(){
         if(height > 300){
             setShowTec(styles.show)
         }
-        if(window.innerWidth > 425){
-            if(height > 2100){
+        if(window.innerWidth < 425){
+            if(height > 1600){
                 setShowProject(styles.show)
             }
-            if(height > 1000){
+            if(height > 800){
                 setShowEducation(styles.show)
             }
         }else{
-            if(height > 1600){
+            if(height > 2100){
                 setShowProject(styles.show)
             }
             if(height > 900){
