@@ -54,19 +54,23 @@ function Main(){
         if(height > 300){
             setShowTec(styles.show)
         }
-        if(height > 1000){
-            setShowEducation(styles.show)
-        }
         if(window.innerWidth > 425){
             if(height > 2100){
                 setShowProject(styles.show)
             }
+            if(height > 1000){
+                setShowEducation(styles.show)
+            }
         }else{
-            if(height > 1800){
+            if(height > 1600){
                 setShowProject(styles.show)
+            }
+            if(height > 900){
+                setShowEducation(styles.show)
             }
         }
     }
+
     return(
         <div className={styles.main}>
         <main className={styles.container}>
