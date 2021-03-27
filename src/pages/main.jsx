@@ -42,7 +42,6 @@ function Main(){
     const [show,setShow] = useState('')
     const [showTec,setShowTec] = useState('')
     const [showEducation,setShowEducation] = useState('')
-    const [showProject,setShowProject] = useState('')
 
     useEffect(()=>{
         setShow(styles.show)
@@ -55,17 +54,10 @@ function Main(){
             setShowTec(styles.show)
         }
         if(window.innerWidth <= 425){
-            if(height > 1400){
-                
-                setShowProject(styles.show)
-            }
             if(height > 700){
                 setShowEducation(styles.show)
             }
         }else{
-            if(height > 2100){
-                setShowProject(styles.show)
-            }
             if(height > 900){
                 setShowEducation(styles.show)
             }
@@ -147,9 +139,8 @@ function Main(){
                         <p className={styles.listItem}>Inglês intermediario</p>
                     </ul> 
                 </div>
-                
             </section>
-            <section className={`${styles.section} ${showProject}`}>
+            <section className={`${styles.projects}`}>
                 <h1>Projetos</h1>
                 <div className={styles.carousel}>
                     <Carousel responsive={responsive}>
